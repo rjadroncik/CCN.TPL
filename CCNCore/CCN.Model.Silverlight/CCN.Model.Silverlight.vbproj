@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCN.Model</RootNamespace>
+    <AssemblyName>CCN.Model.Silverlight</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <MyType>Empty</MyType>
+    <OutputPath>..\Bin\Debug\</OutputPath>
+    <DocumentationFile>CCN.Model.Silverlight.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>SILVERLIGHT=1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\Release\</OutputPath>
+    <DocumentationFile>CCN.Model.Silverlight.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>SILVERLIGHT=1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Net" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Ink" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Animation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ccn.model\model\attributes\DerivedAttribute.vb">
+      <Link>Attributes\DerivedAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\MaxHodAttribute.vb">
+      <Link>Attributes\MaxHodAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\OptionalAttribute.vb">
+      <Link>Attributes\OptionalAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\PermanentAttribute.vb">
+      <Link>Attributes\PermanentAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Attributes\PrimaryKeyAttribute.vb">
+      <Link>Attributes\PrimaryKeyAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\RequiredAttribute.vb">
+      <Link>Attributes\RequiredAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\TransientAttribute.vb">
+      <Link>Attributes\TransientAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\attributes\VersionBreakAttribute.vb">
+      <Link>Attributes\VersionBreakAttribute.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\IIdentifiable.vb">
+      <Link>Entities\Base\IIdentifiable.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\LockBase.vb">
+      <Link>Entities\Base\LockBase.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\NHEntita.vb">
+      <Link>Entities\Base\NHEntita.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\NHEntitaCustom.vb">
+      <Link>Entities\Base\NHEntitaCustom.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\NHEntitaString.vb">
+      <Link>Entities\Base\NHEntitaString.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Base\Objekt.vb">
+      <Link>Entities\Base\Objekt.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Logovanie\Base\Log.vb">
+      <Link>Entities\Logovanie\Base\Log.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Logovanie\LogChyba.vb">
+      <Link>Entities\Logovanie\LogChyba.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Logovanie\LogUdalost.vb">
+      <Link>Entities\Logovanie\LogUdalost.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Logovanie\LogVynimka.vb">
+      <Link>Entities\Logovanie\LogVynimka.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Logovanie\LogVynimkaUdaj.vb">
+      <Link>Entities\Logovanie\LogVynimkaUdaj.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Nastavenia\IPouzivatel.vb">
+      <Link>Entities\Nastavenia\IPouzivatel.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Nastavenia\IPravo.vb">
+      <Link>Entities\Nastavenia\IPravo.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Nastavenia\IPravoObjektove.vb">
+      <Link>Entities\Nastavenia\IPravoObjektove.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Entities\Nastavenia\IRola.vb">
+      <Link>Entities\Nastavenia\IRola.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\ComponentType.vb">
+      <Link>Enums\ComponentType.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\IdMaxHod.vb">
+      <Link>Enums\IdMaxHod.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\Logovanie\TypUdalosti.vb">
+      <Link>Enums\Logovanie\TypUdalosti.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\Nastavenia\Cinnost.vb">
+      <Link>Enums\Nastavenia\Cinnost.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\Nastavenia\DatovyTyp.vb">
+      <Link>Enums\Nastavenia\DatovyTyp.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\Nastavenia\IdNastavenia.vb">
+      <Link>Enums\Nastavenia\IdNastavenia.vb</Link>
+    </Compile>
+    <Compile Include="..\ccn.model\model\enums\nastavenia\IdPrava.vb">
+      <Link>Enums\Nastavenia\IdPrava.vb</Link>
+    </Compile>
+    <Compile Include="..\CCN.Model\Model\Enums\Nastavenia\ObjektTyp.vb">
+      <Link>Enums\Nastavenia\ObjektTyp.vb</Link>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCN.Core.VB.Silverlight\CCN.Core.VB.Silverlight.vbproj">
+      <Project>{BCE38694-88DA-4068-ABB2-4A25B76DCA23}</Project>
+      <Name>CCN.Core.VB.Silverlight</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

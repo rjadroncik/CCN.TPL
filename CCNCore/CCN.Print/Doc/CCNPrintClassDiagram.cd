@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dali.CCN.CCNPrintFileFormatException" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Exceptions\CCNPrintFileFormatException.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintPreview" Collapsed="true">
+    <Position X="18.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAACAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Forms\CCNPrintPreview.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintXmlReader" Collapsed="true">
+    <Position X="18.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAABICgEAAAAEIAAAAEAAAHAAAAAAhAAEAAAEBAJA=</HashCode>
+      <FileName>CCNPrint\IO\CCNPrintXmlReader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintXmlWriter" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECABAAAEQAAAEBQIABCAGAIAAAAAAIAAAAEgAABAAIA=</HashCode>
+      <FileName>CCNPrint\IO\CCNPrintXmlWriter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintDocument" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAoEAAAAKsQCAAoAQBARBAAgAAAEABAgBAAAECA=</HashCode>
+      <FileName>CCNPrint\Objects\CCNPrintDocument.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintLayer" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\CCNPrintLayer.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintContainer" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIAAAgAAABAAAAAEAAAAQQAEAAAAABIAAAAAgAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\Base\CCNPrintContainer.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintElement" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIDQAAIDESAAAAAAABAbkAQAhCAAAICABABAAAA4AA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\Base\CCNPrintElement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableElement" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A0ASAAEAxAgAAgBIAAAAAgAgCAAEACAAABKAAgQBAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\Base\CCNPrintTableElement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintBlock" Collapsed="true">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintBlock.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintFooter" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintFooter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintHeader" Collapsed="true">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintHeader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintImage" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAABAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintImage.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintLine" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAEAIBAQBAAAAAAADAEAAAoABAAAAABAAgAAAYAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintLine.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintRectangle" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAgAACAAAAAAAAAACgAAAAAAABAAAAAEAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintRectangle.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTable" Collapsed="true">
+    <Position X="10" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAIQAAAAACAECAAAAAAAAAQgAAAAAAABAAAAgQAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTable.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableCell" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAgAAAAAABIAAAACAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTableCell.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableColumn" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAEQAABAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTableColumn.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableHeader" Collapsed="true">
+    <Position X="15" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAkCAAAAAAAAAIAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTableHeader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableRow" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABACACAgBAAIAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTableRow.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTableVector" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTableVector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTextField" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAABAAAAAAIAAAAAgAgAAAEAAAAABKADgAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTextField.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTextFieldBound" Collapsed="true">
+    <Position X="11" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTextFieldBound.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintTextFieldLiteral" Collapsed="true">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAAAACAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Elements\CCNPrintTextFieldLiteral.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintBorder" Collapsed="true">
+    <Position X="15" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAQAAAAAJAAAABAAAAAAAAAAAAACAAAAAgEAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Properties\CCNPrintBorder.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintBorders" Collapsed="true">
+    <Position X="16.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAQAAAAAAAMAQgACACAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Properties\CCNPrintBorders.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintOffset" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAEAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Properties\CCNPrintOffset.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dali.CCN.CCNPrintOffsets" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAQAAAAAAAMAQgACACAAAAAAAA=</HashCode>
+      <FileName>CCNPrint\Objects\Properties\CCNPrintOffsets.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

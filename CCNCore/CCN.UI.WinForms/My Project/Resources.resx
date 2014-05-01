@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="large_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\large_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_important" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\large_important.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\large_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_developer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_developer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_errors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_errors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_events" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_events.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_groups" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_groups.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_lists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_lists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_rights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_rights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_role" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_role.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medium_warnings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\medium_warnings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_application_xml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_application_xml.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_archives" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_archives.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_arrow_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_barcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_barcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_blocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_blocked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_chart_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_chart_line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_coins_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_coins_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_coins_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_coins_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_contact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_end_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_end_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_fastforward_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_fastforward_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_pause_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_pause_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_play_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_play_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_rewind_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_rewind_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_start_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_start_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_control_stop_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_control_stop_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_database_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_database_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_document_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_document_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_edit_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_edit_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_flip_horizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_flip_horizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folders.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folders_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folders_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_folder_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_folder_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_group_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_group_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_listbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_listbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_list_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_list_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_lock_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_lock_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_mail_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_mail_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_mail_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_mail_minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_mail_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_mail_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_mail_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_mail_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_okay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_okay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_pill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_pill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_pill_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_pill_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_pill_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_pill_minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_pill_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_pill_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_pill_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_pill_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_showhide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_showhide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_sum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_sum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_system_users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_system_users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_table_autosize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_table_autosize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_table_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_table_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_table_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_table_excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_table_export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_table_export.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_table_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_table_import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_tabs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_tabs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_undo_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_undo_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_users_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_users_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_user_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_user_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_user_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_user_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_user_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_user_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\ccn.ui\icons\small_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

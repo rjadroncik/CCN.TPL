@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C964B522-2E27-4E5E-8E06-9506F58D79C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCN.UI</RootNamespace>
+    <AssemblyName>CCN.UI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DocumentationFile>CCN.UI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DocumentationFile>CCN.UI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DocumentationFile>CCN.UI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\CCN.UI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DocumentationFile>CCN.UI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\CCN.UI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\IObjektyZoznam.vb" />
+    <Compile Include="Components\IGrupovatelne.vb" />
+    <Compile Include="Components\IObjektVyber.vb" />
+    <Compile Include="Components\IObjektyVyber.vb" />
+    <Compile Include="Enums\Zarovnanie.vb" />
+    <Compile Include="Enums\Zoradenie.vb" />
+    <Compile Include="Model\Grupa.vb" />
+    <Compile Include="Model\GrupaDefinicia.vb" />
+    <Compile Include="Model\Stlpec.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCN.Core.VB\CCN.Core.VB.vbproj">
+      <Project>{34580198-126A-4387-B116-92041D8BF7A6}</Project>
+      <Name>CCN.Core.VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\large_error.png" />
+    <Content Include="Icons\large_important.png" />
+    <Content Include="Icons\large_warning.png" />
+    <Content Include="Icons\medium_config.png" />
+    <Content Include="Icons\medium_developer.png" />
+    <Content Include="Icons\medium_errors.png" />
+    <Content Include="Icons\medium_events.png" />
+    <Content Include="Icons\medium_groups.png" />
+    <Content Include="Icons\medium_key.png" />
+    <Content Include="Icons\medium_list.png" />
+    <Content Include="Icons\medium_lists.png" />
+    <Content Include="Icons\medium_lock.png" />
+    <Content Include="Icons\medium_report.png" />
+    <Content Include="Icons\medium_rights.png" />
+    <Content Include="Icons\medium_role.png" />
+    <Content Include="Icons\medium_settings.png" />
+    <Content Include="Icons\medium_update.png" />
+    <Content Include="Icons\medium_users.png" />
+    <Content Include="Icons\medium_warnings.png" />
+    <Content Include="Icons\small_application_xml.png" />
+    <Content Include="Icons\small_archives.png" />
+    <Content Include="Icons\small_arrow_down.png" />
+    <Content Include="Icons\small_arrow_left.png" />
+    <Content Include="Icons\small_arrow_right.png" />
+    <Content Include="Icons\small_arrow_up.png" />
+    <Content Include="Icons\small_barcode.png" />
+    <Content Include="Icons\small_blocked.png" />
+    <Content Include="Icons\small_calculator.png" />
+    <Content Include="Icons\small_chart_line.png" />
+    <Content Include="Icons\small_close.png" />
+    <Content Include="Icons\small_coins.png" />
+    <Content Include="Icons\small_coins_add.png" />
+    <Content Include="Icons\small_coins_delete.png" />
+    <Content Include="Icons\small_contact.png" />
+    <Content Include="Icons\small_control_end_blue.png" />
+    <Content Include="Icons\small_control_fastforward_blue.png" />
+    <Content Include="Icons\small_control_pause_blue.png" />
+    <Content Include="Icons\small_control_play_blue.png" />
+    <Content Include="Icons\small_control_rewind_blue.png" />
+    <Content Include="Icons\small_control_start_blue.png" />
+    <Content Include="Icons\small_control_stop_blue.png" />
+    <Content Include="Icons\small_database_refresh.png" />
+    <Content Include="Icons\small_document_add.png" />
+    <Content Include="Icons\small_document_copy.png" />
+    <Content Include="Icons\small_document_delete.png" />
+    <Content Include="Icons\small_document_edit.png" />
+    <Content Include="Icons\small_document_empty.png" />
+    <Content Include="Icons\small_document_error.png" />
+    <Content Include="Icons\small_document_go.png" />
+    <Content Include="Icons\small_document_info.png" />
+    <Content Include="Icons\small_document_list.png" />
+    <Content Include="Icons\small_document_ok.png" />
+    <Content Include="Icons\small_document_remove.png" />
+    <Content Include="Icons\small_document_warning.png" />
+    <Content Include="Icons\small_edit_delete.png" />
+    <Content Include="Icons\small_eye.png" />
+    <Content Include="Icons\small_filter.png" />
+    <Content Include="Icons\small_flip_horizontal.png" />
+    <Content Include="Icons\small_folder.png" />
+    <Content Include="Icons\small_folders.png" />
+    <Content Include="Icons\small_folders_plus.png" />
+    <Content Include="Icons\small_folder_add.png" />
+    <Content Include="Icons\small_folder_edit.png" />
+    <Content Include="Icons\small_folder_go.png" />
+    <Content Include="Icons\small_folder_import.png" />
+    <Content Include="Icons\small_folder_mail.png" />
+    <Content Include="Icons\small_folder_page.png" />
+    <Content Include="Icons\small_folder_plus.png" />
+    <Content Include="Icons\small_gear.png" />
+    <Content Include="Icons\small_group_box.png" />
+    <Content Include="Icons\small_invoice.png" />
+    <Content Include="Icons\small_list.png" />
+    <Content Include="Icons\small_listbox.png" />
+    <Content Include="Icons\small_list_box.png" />
+    <Content Include="Icons\small_lock_delete.png" />
+    <Content Include="Icons\small_mail.png" />
+    <Content Include="Icons\small_mail_copy.png" />
+    <Content Include="Icons\small_mail_minus.png" />
+    <Content Include="Icons\small_mail_pencil.png" />
+    <Content Include="Icons\small_mail_plus.png" />
+    <Content Include="Icons\small_okay.png" />
+    <Content Include="Icons\small_pill.png" />
+    <Content Include="Icons\small_pill_arrow.png" />
+    <Content Include="Icons\small_pill_minus.png" />
+    <Content Include="Icons\small_pill_plus.png" />
+    <Content Include="Icons\small_pill_search.png" />
+    <Content Include="Icons\small_print.png" />
+    <Content Include="Icons\small_save.png" />
+    <Content Include="Icons\small_showhide.png" />
+    <Content Include="Icons\small_statistics.png" />
+    <Content Include="Icons\small_sum.png" />
+    <Content Include="Icons\small_system_users.png" />
+    <Content Include="Icons\small_table_autosize.png" />
+    <Content Include="Icons\small_table_delete.png" />
+    <Content Include="Icons\small_table_excel.png" />
+    <Content Include="Icons\small_table_export.png" />
+    <Content Include="Icons\small_table_import.png" />
+    <Content Include="Icons\small_tabs.png" />
+    <Content Include="Icons\small_template.png" />
+    <Content Include="Icons\small_undo_start.png" />
+    <Content Include="Icons\small_user.png" />
+    <Content Include="Icons\small_users.png" />
+    <Content Include="Icons\small_users_add.png" />
+    <Content Include="Icons\small_users_delete.png" />
+    <Content Include="Icons\small_users_edit.png" />
+    <Content Include="Icons\small_users_go.png" />
+    <Content Include="Icons\small_users_gray.png" />
+    <Content Include="Icons\small_user_add.png" />
+    <Content Include="Icons\small_user_delete.png" />
+    <Content Include="Icons\small_user_edit.png" />
+    <Content Include="Icons\small_warning.png" />
+    <Content Include="Icons\small_wrench.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

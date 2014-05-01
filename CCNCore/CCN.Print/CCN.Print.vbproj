@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A702DDB6-D5F4-422E-A66D-95FD25F4247B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCN.Print</RootNamespace>
+    <AssemblyName>CCN.Print</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <NoWarn>41999,42016</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <NoWarn>41999,42016</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>41999,42016</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Debug\CCN.Print.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>41999,42016</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Release\CCN.Print.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Report.4, Version=4.6.20103.54202, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.6.20103.54202, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1Report.4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\CCNPrintFileFormatException.vb" />
+    <Compile Include="Forms\CCNPrintPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IO\CCNPrintXmlReader.vb" />
+    <Compile Include="IO\CCNPrintXmlWriter.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Objects\CCNPrintDocument.vb" />
+    <Compile Include="Objects\CCNPrintLayer.vb" />
+    <Compile Include="Objects\Converters\CCNAlignmentHorizontalConverter.vb" />
+    <Compile Include="Objects\Converters\CCNAlignmentVerticalConverter.vb" />
+    <Compile Include="Objects\Converters\CCNBorderConverter.vb" />
+    <Compile Include="Objects\Converters\CCNBordersConverter.vb" />
+    <Compile Include="Objects\Converters\CCNDashStyleConverter.vb" />
+    <Compile Include="Objects\Converters\CCNFloatConverter.vb" />
+    <Compile Include="Objects\Converters\CCNFontConverter.vb" />
+    <Compile Include="Objects\Converters\CCNValueIdConverter.vb" />
+    <Compile Include="Objects\Elements\Base\CCNPrintContainer.vb" />
+    <Compile Include="Objects\Elements\Base\CCNPrintElement.vb" />
+    <Compile Include="Objects\Elements\Base\CCNPrintTableElement.vb" />
+    <Compile Include="Objects\Elements\CCNPrintBlock.vb" />
+    <Compile Include="Objects\Elements\CCNPrintFooter.vb" />
+    <Compile Include="Objects\Elements\CCNPrintHeader.vb" />
+    <Compile Include="Objects\Elements\CCNPrintImage.vb" />
+    <Compile Include="Objects\Elements\CCNPrintLine.vb" />
+    <Compile Include="Objects\Elements\CCNPrintPageFooter.vb" />
+    <Compile Include="Objects\Elements\CCNPrintPageHeader.vb" />
+    <Compile Include="Objects\Elements\CCNPrintRectangle.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTable.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTableCell.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTableColumn.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTableHeader.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTableRow.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTableVector.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTextField.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTextFieldBound.vb" />
+    <Compile Include="Objects\Elements\CCNPrintTextFieldLiteral.vb" />
+    <Compile Include="Objects\Properties\CCNPrintBorder.vb" />
+    <Compile Include="Objects\Properties\CCNPrintBorders.vb" />
+    <Compile Include="Objects\Properties\CCNPrintGridLine.vb" />
+    <Compile Include="Objects\Properties\CCNPrintGridLines.vb" />
+    <Compile Include="Objects\Properties\CCNPrintOffset.vb" />
+    <Compile Include="Objects\Properties\CCNPrintOffsets.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CCNPrintPreview.resx">
+      <DependentUpon>CCNPrintPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doc\CCNPrint.docx" />
+    <None Include="Doc\CCNPrintClassDiagram.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCN.Core.VB\CCN.Core.VB.vbproj">
+      <Project>{34580198-126A-4387-B116-92041D8BF7A6}</Project>
+      <Name>CCN.Core.VB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

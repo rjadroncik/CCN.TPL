@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project name="CCNCore" default="release" xmlns="http://nant.sf.net/release/0.92/nant.xsd">
+	
+	<description>Nastavi verzie do assembly jednotlivych projektov a buildne solution.</description>
+	
+	<target name="release" description="release">
+		
+		<depends on="build_solution" />
+	</target>
+	
+	<target name="set_properties" >
+		
+		<property name="nant.settings.currentframework" value="net-4.0"/>
+		
+		<property name="solution_directory" value="${path::get-full-path('.\')}" />	
+		
+		<echo message="DONE" />
+	</target>
+	
+	<target name="build_solution" depends="set_properties">
+		
+		<projver directory="${solution_directory}CCN.Aktualizacia.Model"    version="1.2.7.9533" />
+		<projver directory="${solution_directory}CCN.Aktualizacia.WinForms" version="1.2.7.9533" />
+		<projver directory="${solution_directory}CCN.Core.VB"               version="1.2.9.10396" />
+		<projver directory="${solution_directory}CCN.Model"                 version="1.2.8.10188" />
+		<projver directory="${solution_directory}CCN.Network.FTP"           version="1.2.7.9533" />
+		<projver directory="${solution_directory}CCN.Print"                 version="1.2.7.9533" />
+		<projver directory="${solution_directory}CCN.Reports"               version="1.2.7.9533" />
+		<projver directory="${solution_directory}CCN.Services"              version="1.2.9.10396" />
+		<projver directory="${solution_directory}CCN.UI"                    version="1.2.8.10188" />
+		<projver directory="${solution_directory}CCN.UI.WinForms"           version="1.2.9.10396" />
+		<projver directory="${solution_directory}CCN.Office"                version="1.2.7.9533" />
+		
+		
+		<exec program="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe" managed="true" append="true" verbose="true">
+			
+			<arg file="${solution_directory}CCNCore.sln" />
+			<arg line="/Rebuild &quot;Release|x86&quot;" />
+		</exec>
+		
+		<echo message="DONE" />
+	</target>	
+	
+</project>

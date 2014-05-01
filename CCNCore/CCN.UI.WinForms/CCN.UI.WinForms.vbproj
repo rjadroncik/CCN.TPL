@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CACCE013-3A5D-4B30-B24B-7BCD948555F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCN.UI.WinForms</RootNamespace>
+    <AssemblyName>CCN.UI.WinForms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>CCN.UI.WinForms.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Debug\CCN.UI.WinForms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>CCN.UI.WinForms.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Release\CCN.UI.WinForms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>CCN.UI.WinForms.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Debug\CCN.UI.WinForms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <DocumentationFile>CCN.UI.WinForms.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\Release\CCN.UI.WinForms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20103.19465, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1Command.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20103.577, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4, Version=4.0.20103.33251, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.4, Version=4.1.20103.174, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1List.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20103.85, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.ComponentOne\C1.Win.C1SuperTooltip.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.NHibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\CCN.TPA.NHibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Draggable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ExpandableGroupbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ExpandableGroupboxDesigner.vb" />
+    <Compile Include="Components\FlexGridGrouper\FlexGridGroup.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridGrouper.Designer.vb">
+      <DependentUpon>FlexGridGrouper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridGrouper.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridGrouperDesigner.vb" />
+    <Compile Include="Components\FlexGridGrouper\FlexGridGrouperTestForm.Designer.vb">
+      <DependentUpon>FlexGridGrouperTestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridGrouperTestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridOverlay.Designer.vb">
+      <DependentUpon>FlexGridOverlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FlexGridGrouper\FlexGridOverlay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektyZoznam.Designer.vb">
+      <DependentUpon>ObjektyZoznam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektyZoznam.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektVyberGrid.Designer.vb">
+      <DependentUpon>ObjektVyberGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektVyberGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektVyberList.Designer.vb">
+      <DependentUpon>ObjektVyberList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektVyberList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Generic\GenericComponentResourceManager.vb" />
+    <Compile Include="Components\Generic\ObjektyVyberCheck.Designer.vb">
+      <DependentUpon>ObjektyVyberCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektyVyberCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Notification\Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Notification\Loading.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Notification\ProgressReport.Designer.vb">
+      <DependentUpon>ProgressReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Notification\ProgressReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektyVyber2Lists.Designer.vb">
+      <DependentUpon>ObjektyVyber2Lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Generic\ObjektyVyber2Lists.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Sprava\CinnostiVyber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Sprava\NastaveniaEditor.Designer.vb">
+      <DependentUpon>NastaveniaEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Sprava\NastaveniaEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Sprava\PravoObjektoveVyber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Sprava\RoleVyber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Sprava\PouzivateliaVyber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SystemStatus.Designer.vb">
+      <DependentUpon>SystemStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SystemStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\BooleanEditor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\DateSelect.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\DecimalEditor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\EnumSelect.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\IntegerEditor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\MultiSelect.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\MultiSelectPopup.Designer.vb">
+      <DependentUpon>MultiSelectPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ValueEditors\MultiSelectPopup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ValueEditors\NumericEditor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ChybaForm.designer.vb">
+      <DependentUpon>ChybaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChybaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.designer.vb">
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\ChybyForm.Designer.vb">
+      <DependentUpon>ChybyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\ChybyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\PravoObjektoveForm.Designer.vb">
+      <DependentUpon>PravoObjektoveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\PravoObjektoveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\PravaObjektoveRoleForm.Designer.vb">
+      <DependentUpon>PravaObjektoveRoleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\PravaObjektoveRoleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\RolaForm.Designer.vb">
+      <DependentUpon>RolaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\RolaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\RoleForm.Designer.vb">
+      <DependentUpon>RoleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\RoleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\PouzivatelForm.Designer.vb">
+      <DependentUpon>PouzivatelForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\PouzivatelForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\PouzivateliaForm.Designer.vb">
+      <DependentUpon>PouzivateliaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\PouzivateliaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\UdalostiForm.Designer.vb">
+      <DependentUpon>UdalostiForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\UdalostiForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\ZamkyForm.Designer.vb">
+      <DependentUpon>ZamkyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\ZamkyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sprava\NastaveniaForm.Designer.vb">
+      <DependentUpon>NastaveniaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sprava\NastaveniaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\FlexGrid.vb" />
+    <Compile Include="Services\FlexGridExtensionMethods.vb" />
+    <Compile Include="Services\GuiUtil.vb" />
+    <Compile Include="Services\Icons.vb" />
+    <Compile Include="Services\Upozornenia.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\FlexGridGrouper\FlexGridGrouper.resx">
+      <DependentUpon>FlexGridGrouper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FlexGridGrouper\FlexGridGrouperTestForm.resx">
+      <DependentUpon>FlexGridGrouperTestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FlexGridGrouper\FlexGridOverlay.resx">
+      <DependentUpon>FlexGridOverlay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Generic\ObjektyZoznam.resx">
+      <DependentUpon>ObjektyZoznam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Generic\ObjektVyberGrid.resx">
+      <DependentUpon>ObjektVyberGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Generic\ObjektVyberList.resx">
+      <DependentUpon>ObjektVyberList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Generic\ObjektyVyberCheck.resx">
+      <DependentUpon>ObjektyVyberCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Notification\Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Notification\ProgressReport.resx">
+      <DependentUpon>ProgressReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Generic\ObjektyVyber2Lists.resx">
+      <DependentUpon>ObjektyVyber2Lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Sprava\NastaveniaEditor.resx">
+      <DependentUpon>NastaveniaEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SystemStatus.resx">
+      <DependentUpon>SystemStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ValueEditors\MultiSelectPopup.resx">
+      <DependentUpon>MultiSelectPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChybaForm.resx">
+      <DependentUpon>ChybaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressForm.resx">
+      <DependentUpon>ProgressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\ChybyForm.resx">
+      <DependentUpon>ChybyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\PravoObjektoveForm.resx">
+      <DependentUpon>PravoObjektoveForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\PravaObjektoveRoleForm.resx">
+      <DependentUpon>PravaObjektoveRoleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\RolaForm.resx">
+      <DependentUpon>RolaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\RoleForm.resx">
+      <DependentUpon>RoleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\PouzivatelForm.resx">
+      <DependentUpon>PouzivatelForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\PouzivateliaForm.resx">
+      <DependentUpon>PouzivateliaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\UdalostiForm.resx">
+      <DependentUpon>UdalostiForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\ZamkyForm.resx">
+      <DependentUpon>ZamkyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sprava\NastaveniaForm.resx">
+      <DependentUpon>NastaveniaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCN.Core.VB\CCN.Core.VB.vbproj">
+      <Project>{34580198-126A-4387-B116-92041D8BF7A6}</Project>
+      <Name>CCN.Core.VB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCN.Model\CCN.Model.vbproj">
+      <Project>{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}</Project>
+      <Name>CCN.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCN.Services\CCN.Services.vbproj">
+      <Project>{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}</Project>
+      <Name>CCN.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CCN.UI\CCN.UI.vbproj">
+      <Project>{C964B522-2E27-4E5E-8E06-9506F58D79C4}</Project>
+      <Name>CCN.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\CCN.UI\Icons\large_error.png">
+      <Link>Icons\large_error.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\large_important.png">
+      <Link>Icons\large_important.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\large_warning.png">
+      <Link>Icons\large_warning.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_config.png">
+      <Link>Icons\medium_config.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_developer.png">
+      <Link>Icons\medium_developer.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_errors.png">
+      <Link>Icons\medium_errors.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_events.png">
+      <Link>Icons\medium_events.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_groups.png">
+      <Link>Icons\medium_groups.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_key.png">
+      <Link>Icons\medium_key.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_list.png">
+      <Link>Icons\medium_list.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_lists.png">
+      <Link>Icons\medium_lists.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_lock.png">
+      <Link>Icons\medium_lock.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_report.png">
+      <Link>Icons\medium_report.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_rights.png">
+      <Link>Icons\medium_rights.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_role.png">
+      <Link>Icons\medium_role.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_settings.png">
+      <Link>Icons\medium_settings.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_update.png">
+      <Link>Icons\medium_update.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_users.png">
+      <Link>Icons\medium_users.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\medium_warnings.png">
+      <Link>Icons\medium_warnings.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_accept.png">
+      <Link>Icons\small_accept.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_application_xml.png">
+      <Link>Icons\small_application_xml.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_archives.png">
+      <Link>Icons\small_archives.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_arrow_down.png">
+      <Link>Icons\small_arrow_down.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_arrow_left.png">
+      <Link>Icons\small_arrow_left.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_arrow_right.png">
+      <Link>Icons\small_arrow_right.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_arrow_up.png">
+      <Link>Icons\small_arrow_up.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_barcode.png">
+      <Link>Icons\small_barcode.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_blocked.png">
+      <Link>Icons\small_blocked.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_calculator.png">
+      <Link>Icons\small_calculator.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_chart_line.png">
+      <Link>Icons\small_chart_line.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_close.png">
+      <Link>Icons\small_close.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_coins.png">
+      <Link>Icons\small_coins.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_coins_add.png">
+      <Link>Icons\small_coins_add.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_coins_delete.png">
+      <Link>Icons\small_coins_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_contact.png">
+      <Link>Icons\small_contact.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_end_blue.png">
+      <Link>Icons\small_control_end_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_fastforward_blue.png">
+      <Link>Icons\small_control_fastforward_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_pause_blue.png">
+      <Link>Icons\small_control_pause_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_play_blue.png">
+      <Link>Icons\small_control_play_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_rewind_blue.png">
+      <Link>Icons\small_control_rewind_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_start_blue.png">
+      <Link>Icons\small_control_start_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_control_stop_blue.png">
+      <Link>Icons\small_control_stop_blue.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_database_refresh.png">
+      <Link>Icons\small_database_refresh.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_add.png">
+      <Link>Icons\small_document_add.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_copy.png">
+      <Link>Icons\small_document_copy.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_delete.png">
+      <Link>Icons\small_document_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_edit.png">
+      <Link>Icons\small_document_edit.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_empty.png">
+      <Link>Icons\small_document_empty.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_error.png">
+      <Link>Icons\small_document_error.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_go.png">
+      <Link>Icons\small_document_go.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_info.png">
+      <Link>Icons\small_document_info.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_list.png">
+      <Link>Icons\small_document_list.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_ok.png">
+      <Link>Icons\small_document_ok.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_remove.png">
+      <Link>Icons\small_document_remove.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_document_warning.png">
+      <Link>Icons\small_document_warning.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_edit_delete.png">
+      <Link>Icons\small_edit_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_eye.png">
+      <Link>Icons\small_eye.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_filter.png">
+      <Link>Icons\small_filter.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_flip_horizontal.png">
+      <Link>Icons\small_flip_horizontal.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder.png">
+      <Link>Icons\small_folder.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folders.png">
+      <Link>Icons\small_folders.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folders_plus.png">
+      <Link>Icons\small_folders_plus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_add.png">
+      <Link>Icons\small_folder_add.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_edit.png">
+      <Link>Icons\small_folder_edit.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_go.png">
+      <Link>Icons\small_folder_go.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_import.png">
+      <Link>Icons\small_folder_import.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_mail.png">
+      <Link>Icons\small_folder_mail.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_page.png">
+      <Link>Icons\small_folder_page.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_folder_plus.png">
+      <Link>Icons\small_folder_plus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_gear.png">
+      <Link>Icons\small_gear.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_group_box.png">
+      <Link>Icons\small_group_box.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_invoice.png">
+      <Link>Icons\small_invoice.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_list.png">
+      <Link>Icons\small_list.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_listbox.png">
+      <Link>Icons\small_listbox.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_list_box.png">
+      <Link>Icons\small_list_box.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_lock_delete.png">
+      <Link>Icons\small_lock_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_mail.png">
+      <Link>Icons\small_mail.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_mail_copy.png">
+      <Link>Icons\small_mail_copy.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_mail_minus.png">
+      <Link>Icons\small_mail_minus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_mail_pencil.png">
+      <Link>Icons\small_mail_pencil.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_mail_plus.png">
+      <Link>Icons\small_mail_plus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_okay.png">
+      <Link>Icons\small_okay.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_pill.png">
+      <Link>Icons\small_pill.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_pill_arrow.png">
+      <Link>Icons\small_pill_arrow.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_pill_minus.png">
+      <Link>Icons\small_pill_minus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_pill_plus.png">
+      <Link>Icons\small_pill_plus.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_pill_search.png">
+      <Link>Icons\small_pill_search.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_print.png">
+      <Link>Icons\small_print.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_save.png">
+      <Link>Icons\small_save.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_showhide.png">
+      <Link>Icons\small_showhide.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_statistics.png">
+      <Link>Icons\small_statistics.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_sum.png">
+      <Link>Icons\small_sum.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_system_users.png">
+      <Link>Icons\small_system_users.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_table_autosize.png">
+      <Link>Icons\small_table_autosize.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_table_delete.png">
+      <Link>Icons\small_table_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_table_excel.png">
+      <Link>Icons\small_table_excel.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_table_export.png">
+      <Link>Icons\small_table_export.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_table_import.png">
+      <Link>Icons\small_table_import.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_tabs.png">
+      <Link>Icons\small_tabs.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_template.png">
+      <Link>Icons\small_template.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_undo_start.png">
+      <Link>Icons\small_undo_start.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_user.png">
+      <Link>Icons\small_user.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users.png">
+      <Link>Icons\small_users.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users_add.png">
+      <Link>Icons\small_users_add.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users_delete.png">
+      <Link>Icons\small_users_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users_edit.png">
+      <Link>Icons\small_users_edit.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users_go.png">
+      <Link>Icons\small_users_go.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_users_gray.png">
+      <Link>Icons\small_users_gray.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_user_add.png">
+      <Link>Icons\small_user_add.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_user_delete.png">
+      <Link>Icons\small_user_delete.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_user_edit.png">
+      <Link>Icons\small_user_edit.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_warning.png">
+      <Link>Icons\small_warning.png</Link>
+    </Content>
+    <Content Include="..\CCN.UI\Icons\small_wrench.png">
+      <Link>Icons\small_wrench.png</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

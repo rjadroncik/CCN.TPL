@@ -1,0 +1,257 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Print", "CCN.Print\CCN.Print.vbproj", "{A702DDB6-D5F4-422E-A66D-95FD25F4247B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.UI.WinForms", "CCN.UI.WinForms\CCN.UI.WinForms.vbproj", "{CACCE013-3A5D-4B30-B24B-7BCD948555F9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Reports", "CCN.Reports\CCN.Reports.vbproj", "{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Aktualizacia.WinForms", "CCN.Aktualizacia.WinForms\CCN.Aktualizacia.WinForms.vbproj", "{24906887-DE8A-40D4-8165-07FBB2F42172}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Core.VB", "CCN.Core.VB\CCN.Core.VB.vbproj", "{34580198-126A-4387-B116-92041D8BF7A6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Services", "CCN.Services\CCN.Services.vbproj", "{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Model", "CCN.Model\CCN.Model.vbproj", "{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Network.FTP", "CCN.Network.FTP\CCN.Network.FTP.vbproj", "{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Aktualizacia.Model", "CCN.Aktualizacia.Model\CCN.Aktualizacia.Model.vbproj", "{ABBC1649-5DB8-4938-AB31-BC20AB23B924}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.ComponentOne", "CCN.TPA.ComponentOne", "{C93FD5A6-54DD-41EA-AC45-A317228ACE7C}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.ComponentOne\C1.C1Excel.4.dll = CCN.TPA.ComponentOne\C1.C1Excel.4.dll
+		CCN.TPA.ComponentOne\C1.C1Excel.4.xml = CCN.TPA.ComponentOne\C1.C1Excel.4.xml
+		CCN.TPA.ComponentOne\C1.C1Report.4.Design.dll = CCN.TPA.ComponentOne\C1.C1Report.4.Design.dll
+		CCN.TPA.ComponentOne\C1.C1Report.4.dll = CCN.TPA.ComponentOne\C1.C1Report.4.dll
+		CCN.TPA.ComponentOne\C1.C1Report.4.XML = CCN.TPA.ComponentOne\C1.C1Report.4.XML
+		CCN.TPA.ComponentOne\C1.C1Zip.4.dll = CCN.TPA.ComponentOne\C1.C1Zip.4.dll
+		CCN.TPA.ComponentOne\C1.C1Zip.4.xml = CCN.TPA.ComponentOne\C1.C1Zip.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1Command.4.Design.dll = CCN.TPA.ComponentOne\C1.Win.C1Command.4.Design.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Command.4.dll = CCN.TPA.ComponentOne\C1.Win.C1Command.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Command.4.xml = CCN.TPA.ComponentOne\C1.Win.C1Command.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.Design.dll = CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.Design.dll
+		CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.dll = CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.xml = CCN.TPA.ComponentOne\C1.Win.C1FlexGrid.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1Input.4.Design.dll = CCN.TPA.ComponentOne\C1.Win.C1Input.4.Design.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Input.4.dll = CCN.TPA.ComponentOne\C1.Win.C1Input.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Input.4.xml = CCN.TPA.ComponentOne\C1.Win.C1Input.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1InputPanel.4.dll = CCN.TPA.ComponentOne\C1.Win.C1InputPanel.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1InputPanel.4.XML = CCN.TPA.ComponentOne\C1.Win.C1InputPanel.4.XML
+		CCN.TPA.ComponentOne\C1.Win.C1List.4.dll = CCN.TPA.ComponentOne\C1.Win.C1List.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1List.4.xml = CCN.TPA.ComponentOne\C1.Win.C1List.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1Report.4.Design.dll = CCN.TPA.ComponentOne\C1.Win.C1Report.4.Design.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Report.4.dll = CCN.TPA.ComponentOne\C1.Win.C1Report.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Report.4.XML = CCN.TPA.ComponentOne\C1.Win.C1Report.4.XML
+		CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.Design.dll = CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.Design.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.dll = CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.xml = CCN.TPA.ComponentOne\C1.Win.C1Ribbon.4.xml
+		CCN.TPA.ComponentOne\C1.Win.C1Sizer.4.dll = CCN.TPA.ComponentOne\C1.Win.C1Sizer.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1Sizer.4.XML = CCN.TPA.ComponentOne\C1.Win.C1Sizer.4.XML
+		CCN.TPA.ComponentOne\C1.Win.C1SuperTooltip.4.dll = CCN.TPA.ComponentOne\C1.Win.C1SuperTooltip.4.dll
+		CCN.TPA.ComponentOne\C1.Win.C1SuperTooltip.4.xml = CCN.TPA.ComponentOne\C1.Win.C1SuperTooltip.4.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.NHibernate", "CCN.TPA.NHibernate", "{01B6CC69-B382-4B2A-A802-A196F9DFD07D}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.NHibernate\FluentNHibernate.dll = CCN.TPA.NHibernate\FluentNHibernate.dll
+		CCN.TPA.NHibernate\FluentNHibernate.pdb = CCN.TPA.NHibernate\FluentNHibernate.pdb
+		CCN.TPA.NHibernate\FluentNHibernate.XML = CCN.TPA.NHibernate\FluentNHibernate.XML
+		CCN.TPA.NHibernate\Iesi.Collections.dll = CCN.TPA.NHibernate\Iesi.Collections.dll
+		CCN.TPA.NHibernate\Iesi.Collections.pdb = CCN.TPA.NHibernate\Iesi.Collections.pdb
+		CCN.TPA.NHibernate\Iesi.Collections.xml = CCN.TPA.NHibernate\Iesi.Collections.xml
+		CCN.TPA.NHibernate\nhibernate-configuration.xsd = CCN.TPA.NHibernate\nhibernate-configuration.xsd
+		CCN.TPA.NHibernate\nhibernate-mapping.xsd = CCN.TPA.NHibernate\nhibernate-mapping.xsd
+		CCN.TPA.NHibernate\NHibernate.dll = CCN.TPA.NHibernate\NHibernate.dll
+		CCN.TPA.NHibernate\NHibernate.pdb = CCN.TPA.NHibernate\NHibernate.pdb
+		CCN.TPA.NHibernate\NHibernate.xml = CCN.TPA.NHibernate\NHibernate.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.SQLite", "CCN.TPA.SQLite", "{F2A5ED69-6B83-4CFA-953E-513B70B26C9D}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.SQLite\System.Data.SQLite.dll = CCN.TPA.SQLite\System.Data.SQLite.dll
+		CCN.TPA.SQLite\System.Data.SQLite.Linq.dll = CCN.TPA.SQLite\System.Data.SQLite.Linq.dll
+		CCN.TPA.SQLite\System.Data.SQLite.Linq.pdb = CCN.TPA.SQLite\System.Data.SQLite.Linq.pdb
+		CCN.TPA.SQLite\System.Data.SQLite.pdb = CCN.TPA.SQLite\System.Data.SQLite.pdb
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCN.Office", "CCN.Office\CCN.Office.csproj", "{3E28077C-55AD-4AFC-9EA1-26F22509C013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.Office.12", "CCN.TPA.Office.12", "{23572F9E-9845-44E8-A9DA-741EF78626A8}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.Office.12\Microsoft.Office.Interop.Excel.dll = CCN.TPA.Office.12\Microsoft.Office.Interop.Excel.dll
+		CCN.TPA.Office.12\Microsoft.Office.Interop.Excel.xml = CCN.TPA.Office.12\Microsoft.Office.Interop.Excel.xml
+		CCN.TPA.Office.12\Microsoft.Office.Interop.Word.dll = CCN.TPA.Office.12\Microsoft.Office.Interop.Word.dll
+		CCN.TPA.Office.12\Microsoft.Office.Interop.Word.xml = CCN.TPA.Office.12\Microsoft.Office.Interop.Word.xml
+		CCN.TPA.Office.12\Office.dll = CCN.TPA.Office.12\Office.dll
+		CCN.TPA.Office.12\office.xml = CCN.TPA.Office.12\office.xml
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.UI", "CCN.UI\CCN.UI.vbproj", "{C964B522-2E27-4E5E-8E06-9506F58D79C4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Core.VB.Silverlight", "CCN.Core.VB.Silverlight\CCN.Core.VB.Silverlight.vbproj", "{BCE38694-88DA-4068-ABB2-4A25B76DCA23}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCN.Model.Silverlight", "CCN.Model.Silverlight\CCN.Model.Silverlight.vbproj", "{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.ComponentOne.Silverlight", "CCN.TPA.ComponentOne.Silverlight", "{251C0218-C677-4BD7-9F48-2DEA0F31D2DF}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Data.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.Summaries.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DataGrid.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.DateTimeEditors.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Excel.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Extended.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.FlexGrid.4.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Imaging.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.RichTextBox.XML
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.dll = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.dll
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.extmap.xml = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.extmap.xml
+		CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.XML = CCN.TPA.ComponentOne.Silverlight\C1.Silverlight.Zip.XML
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CCNCore.Test", "CCNCore.Test\CCNCore.Test.vbproj", "{659EB875-8001-4E9E-96E3-5BA4A74D2264}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCN.TPA.NUnit", "CCN.TPA.NUnit", "{5CF44237-B647-4CF2-BD8C-6659EEA58617}"
+	ProjectSection(SolutionItems) = preProject
+		CCN.TPA.NUnit\nunit.core.dll = CCN.TPA.NUnit\nunit.core.dll
+		CCN.TPA.NUnit\nunit.framework.dll = CCN.TPA.NUnit\nunit.framework.dll
+		CCN.TPA.NUnit\nunit.framework.xml = CCN.TPA.NUnit\nunit.framework.xml
+		CCN.TPA.NUnit\nunit.mocks.dll = CCN.TPA.NUnit\nunit.mocks.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Debug|x86.ActiveCfg = Debug|x86
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Debug|x86.Build.0 = Debug|x86
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Release|Any CPU.ActiveCfg = Release|x86
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Release|x86.ActiveCfg = Release|x86
+		{A702DDB6-D5F4-422E-A66D-95FD25F4247B}.Release|x86.Build.0 = Release|x86
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Debug|x86.ActiveCfg = Debug|x86
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Debug|x86.Build.0 = Debug|x86
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Release|x86.ActiveCfg = Release|x86
+		{CACCE013-3A5D-4B30-B24B-7BCD948555F9}.Release|x86.Build.0 = Release|x86
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Debug|x86.ActiveCfg = Debug|x86
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Debug|x86.Build.0 = Debug|x86
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Release|Any CPU.ActiveCfg = Release|x86
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Release|x86.ActiveCfg = Release|x86
+		{AEF05297-F38B-4E27-8D72-F82A2C4FB85A}.Release|x86.Build.0 = Release|x86
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Debug|x86.ActiveCfg = Debug|x86
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Debug|x86.Build.0 = Debug|x86
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Release|Any CPU.ActiveCfg = Release|x86
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Release|x86.ActiveCfg = Release|x86
+		{24906887-DE8A-40D4-8165-07FBB2F42172}.Release|x86.Build.0 = Release|x86
+		{34580198-126A-4387-B116-92041D8BF7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34580198-126A-4387-B116-92041D8BF7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34580198-126A-4387-B116-92041D8BF7A6}.Debug|x86.ActiveCfg = Debug|x86
+		{34580198-126A-4387-B116-92041D8BF7A6}.Debug|x86.Build.0 = Debug|x86
+		{34580198-126A-4387-B116-92041D8BF7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34580198-126A-4387-B116-92041D8BF7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34580198-126A-4387-B116-92041D8BF7A6}.Release|x86.ActiveCfg = Release|x86
+		{34580198-126A-4387-B116-92041D8BF7A6}.Release|x86.Build.0 = Release|x86
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Debug|x86.ActiveCfg = Debug|x86
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Debug|x86.Build.0 = Debug|x86
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Release|x86.ActiveCfg = Release|x86
+		{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}.Release|x86.Build.0 = Release|x86
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Debug|x86.ActiveCfg = Debug|x86
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Debug|x86.Build.0 = Debug|x86
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Release|x86.ActiveCfg = Release|x86
+		{AEA0CD2F-2F35-45E3-B381-7D0685E103A5}.Release|x86.Build.0 = Release|x86
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Debug|x86.ActiveCfg = Debug|x86
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Debug|x86.Build.0 = Debug|x86
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Release|Any CPU.ActiveCfg = Release|x86
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Release|x86.ActiveCfg = Release|x86
+		{C17ABDDD-0ABB-4B8A-A7B0-D4CB918412F0}.Release|x86.Build.0 = Release|x86
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Debug|x86.ActiveCfg = Debug|x86
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Debug|x86.Build.0 = Debug|x86
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Release|Any CPU.ActiveCfg = Release|x86
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Release|x86.ActiveCfg = Release|x86
+		{ABBC1649-5DB8-4938-AB31-BC20AB23B924}.Release|x86.Build.0 = Release|x86
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Debug|x86.ActiveCfg = Debug|x86
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Debug|x86.Build.0 = Debug|x86
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Release|x86.ActiveCfg = Release|x86
+		{3E28077C-55AD-4AFC-9EA1-26F22509C013}.Release|x86.Build.0 = Release|x86
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Debug|x86.ActiveCfg = Debug|x86
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Debug|x86.Build.0 = Debug|x86
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C964B522-2E27-4E5E-8E06-9506F58D79C4}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE38694-88DA-4068-ABB2-4A25B76DCA23}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C7A946-BD74-4896-AD11-BAFB5D6A2BB2}.Release|x86.ActiveCfg = Release|Any CPU
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Debug|x86.ActiveCfg = Debug|x86
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Debug|x86.Build.0 = Debug|x86
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659EB875-8001-4E9E-96E3-5BA4A74D2264}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
