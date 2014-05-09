@@ -1,5 +1,8 @@
 ﻿Imports System.Text
 Imports CCN.Core.VB
+Imports DBWrangler.Model.Schema.Datatypes
+Imports DBWrangler.Model.Schema
+Imports DBWrangler.Services.IO
 
 <TestClass()>
 Public Class TestXML

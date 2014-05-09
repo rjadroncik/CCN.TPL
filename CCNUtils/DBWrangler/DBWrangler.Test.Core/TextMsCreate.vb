@@ -2,6 +2,9 @@
 Imports System.Data.SqlClient
 Imports CCN.Services
 Imports System.IO
+Imports DBWrangler.Connectors
+Imports DBWrangler.Model.Schema
+Imports DBWrangler.Services.IO
 
 <TestClass()>
 Public Class TextMsCreate

@@ -64,12 +64,12 @@ Namespace Services.SqlProviders.Common
 
         Public Overridable Function Execute(table As Table, values As DbValues, where As DbValues) As Integer
 
-            Return ExecuteNonQuery(UpdateRow(table, values, where))
+            Return ExecuteNonQuery(UpdateRow(table, values, where) & _commandEnd)
         End Function
 
         Public Overridable Function Execute(table As Table, values As DbValues, where As Condition) As Integer
 
-            Return ExecuteNonQuery(UpdateRow(table, values, where))
+            Return ExecuteNonQuery(UpdateRow(table, values, where) & _commandEnd)
         End Function
 
     End Class

@@ -2,6 +2,7 @@
 Imports CCN.Core.VB
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Services.SqlProviders.Common
+Imports DBWrangler.Enums
 Imports Npgsql
 Imports DBWrangler.Services.SqlProviders.Postgre
 
@@ -33,8 +34,14 @@ Namespace Connectors
 
 #Region "Properties"
 
+        Public Overrides ReadOnly Property Vendor() As DatabaseVendor
+            Get
+                Return DatabaseVendor.Microsoft
+            End Get
+        End Property
+
         Private ReadOnly _connection As NpgsqlConnection
-        Public Overrides ReadOnly Property Connection As DbConnection
+        Public Overrides ReadOnly Property Connection As IDbConnection
             Get
                 Return _connection
             End Get

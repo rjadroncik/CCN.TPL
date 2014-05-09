@@ -1,6 +1,10 @@
 ﻿Imports CCN.Core.VB
+Imports DBWrangler.Connectors
+Imports DBWrangler.Services.SqlProviders.Oracle
+Imports DBWrangler.Services.IO
 Imports Oracle.DataAccess.Client
 Imports Npgsql
+Imports DBWrangler.Model.Schema
 
 <TestClass()>
 Public Class TestOracleExport

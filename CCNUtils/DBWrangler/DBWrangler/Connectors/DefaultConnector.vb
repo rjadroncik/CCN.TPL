@@ -4,6 +4,7 @@ Imports CCN.Core.VB
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Services.SqlProviders.Common
+Imports DBWrangler.Enums
 
 Namespace Connectors
 
@@ -18,6 +19,8 @@ Namespace Connectors
 
             Return "." & String.Join("", Enumerable.Repeat("f", precision.Value))
         End Function
+
+        Public MustOverride ReadOnly Property Vendor() As DatabaseVendor Implements IConnector.Vendor
 
         Public Overridable Function ToSql(hodnota As Date?, precision As Integer?) As String Implements IConnector.ToSql
 
@@ -116,12 +119,12 @@ Namespace Connectors
 
 #Region "Datatypes"
 
-        Public Overridable Function ToSql(typ As DTDate) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtDate) As String Implements IConnector.ToSql
 
             Return If(typ.LowPrecision, "SMALLDATETIME", "DATETIME")
         End Function
 
-        Public Overridable Function ToSql(typ As DTDecimal) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtDecimal) As String Implements IConnector.ToSql
 
             With typ
                 If (.Money) Then Return "MONEY"
@@ -135,47 +138,47 @@ Namespace Connectors
             End With
         End Function
 
-        Public Overridable Function ToSql(typ As DTSingle) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtSingle) As String Implements IConnector.ToSql
 
             Return "REAL"
         End Function
 
-        Public Overridable Function ToSql(typ As DTDouble) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtDouble) As String Implements IConnector.ToSql
 
             Return "FLOAT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTChar) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtChar) As String Implements IConnector.ToSql
 
             Return If(typ.Unicode, "N", "") & "CHAR(1)"
         End Function
 
-        Public Overridable Function ToSql(typ As DTByte) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtByte) As String Implements IConnector.ToSql
 
             Return "TINYINT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTInt16) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtInt16) As String Implements IConnector.ToSql
 
             Return "SMALLINT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTInt32) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtInt32) As String Implements IConnector.ToSql
 
             Return "INT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTInt64) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtInt64) As String Implements IConnector.ToSql
 
             Return "BIGINT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTGuid) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtGuid) As String Implements IConnector.ToSql
 
             Return "UNIQUEIDENTIFIER"
         End Function
 
-        Public Overridable Function ToSql(typ As DTString) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtString) As String Implements IConnector.ToSql
 
             With typ
                 If (.Size > If(.Unicode, 4000, 8000)) Then Return If(.Unicode, "NTEXT", "TEXT")
@@ -184,22 +187,22 @@ Namespace Connectors
             End With
         End Function
 
-        Public Overridable Function ToSql(typ As DTBoolean) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtBoolean) As String Implements IConnector.ToSql
 
             Return "BIT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTByteArray) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtByteArray) As String Implements IConnector.ToSql
 
             Return "VARBINARY(MAX)"
         End Function
 
-        Public Overridable Function ToSql(typ As DTVariant) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtVariant) As String Implements IConnector.ToSql
 
             Return "SQL_VARIANT"
         End Function
 
-        Public Overridable Function ToSql(typ As DTTimestamp) As String Implements IConnector.ToSql
+        Public Overridable Function ToSql(typ As DtTimestamp) As String Implements IConnector.ToSql
 
             Return "TIMESTAMP" & If(typ.Precision.HasValue, "(" & typ.Precision.Value & ")", "")
         End Function
@@ -329,7 +332,7 @@ Namespace Connectors
 
         Public MustOverride Function CommandNew(sql As String) As IDbCommand Implements IConnector.CommandNew
 
-        Public MustOverride ReadOnly Property Connection As DbConnection Implements IConnector.Connection
+        Public MustOverride ReadOnly Property Connection As IDbConnection Implements IConnector.Connection
 
         Public Overridable Function ExecuteNonQuery(sql As String) As Integer Implements IConnector.ExecuteNonQuery
 

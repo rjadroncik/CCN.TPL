@@ -2,10 +2,17 @@
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Services.SqlProviders.Common
+Imports DBWrangler.Enums
 
 Namespace Connectors
 
     Public Interface IConnector
+
+#Region "Info"
+
+        ReadOnly Property Vendor As DatabaseVendor
+
+#End Region
 
 #Region "Values"
 
@@ -27,21 +34,21 @@ Namespace Connectors
 
 #Region "Datatypes"
 
-        Function ToSql(typ As DTDate) As String
-        Function ToSql(typ As DTDecimal) As String
-        Function ToSql(typ As DTSingle) As String
-        Function ToSql(typ As DTDouble) As String
-        Function ToSql(typ As DTChar) As String
-        Function ToSql(typ As DTInt16) As String
-        Function ToSql(typ As DTInt32) As String
-        Function ToSql(typ As DTInt64) As String
-        Function ToSql(typ As DTGuid) As String
-        Function ToSql(typ As DTString) As String
-        Function ToSql(typ As DTBoolean) As String
-        Function ToSql(typ As DTByte) As String
-        Function ToSql(typ As DTByteArray) As String
-        Function ToSql(typ As DTVariant) As String
-        Function ToSql(typ As DTTimestamp) As String
+        Function ToSql(typ As DtDate) As String
+        Function ToSql(typ As DtDecimal) As String
+        Function ToSql(typ As DtSingle) As String
+        Function ToSql(typ As DtDouble) As String
+        Function ToSql(typ As DtChar) As String
+        Function ToSql(typ As DtInt16) As String
+        Function ToSql(typ As DtInt32) As String
+        Function ToSql(typ As DtInt64) As String
+        Function ToSql(typ As DtGuid) As String
+        Function ToSql(typ As DtString) As String
+        Function ToSql(typ As DtBoolean) As String
+        Function ToSql(typ As DtByte) As String
+        Function ToSql(typ As DtByteArray) As String
+        Function ToSql(typ As DtVariant) As String
+        Function ToSql(typ As DtTimestamp) As String
 
 #End Region
 
@@ -68,7 +75,7 @@ Namespace Connectors
 
         Function CommandNew(sql As String) As IDbCommand
 
-        ReadOnly Property Connection As DbConnection
+        ReadOnly Property Connection As IDbConnection
 
         Function ExecuteNonQuery(sql As String) As Integer
         Function ExecuteScalar(sql As String) As Object

@@ -1,6 +1,11 @@
 ﻿Imports CCN.Core.VB
 Imports System.Data.SqlClient
 Imports CCN.Services
+Imports DBWrangler.Model.Schema.Datatypes
+Imports DBWrangler.Connectors
+Imports DBWrangler.Model.Schema
+Imports DBWrangler.Services.SqlProviders.Microsoft
+Imports DBWrangler.Services.IO
 
 <TestClass()>
 Public Class TestMsExport
@@ -75,7 +80,7 @@ Public Class TestMsExport
 
             For Each column In table.Columns
 
-                If (TypeOf column.DataType Is DTDouble) Then
+                If (TypeOf column.DataType Is DtDouble) Then
 
                     Console.Out.WriteLine("{0}.{1} {2}", table.Name, column.Name, column.DataType.ToSql(connector))
                 End If

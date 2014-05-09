@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 Imports DBWrangler.Services.SqlProviders.Common
 Imports DBWrangler.Services.SqlProviders.Microsoft
+Imports DBWrangler.Enums
 
 Namespace Connectors
 
@@ -32,8 +33,14 @@ Namespace Connectors
 
 #Region "Properties"
 
+        Public Overrides ReadOnly Property Vendor() As DatabaseVendor
+            Get
+                Return DatabaseVendor.Microsoft
+            End Get
+        End Property
+
         Private ReadOnly _connection As SqlConnection
-        Public Overrides ReadOnly Property Connection As DbConnection
+        Public Overrides ReadOnly Property Connection As IDbConnection
             Get
                 Return _connection
             End Get

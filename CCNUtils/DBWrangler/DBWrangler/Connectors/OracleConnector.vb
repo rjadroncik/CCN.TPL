@@ -4,8 +4,10 @@ Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Services.SqlProviders.Common
 Imports DBWrangler.Services.SqlProviders.Oracle
+Imports DBWrangler.Enums
 Imports Oracle.DataAccess.Client
 Imports Oracle.DataAccess.Types
+Imports System.Data.SqlTypes
 
 Namespace Connectors
 
@@ -35,12 +37,30 @@ Namespace Connectors
 
 #Region "Properties"
 
+        Public Overrides ReadOnly Property Vendor() As DatabaseVendor
+            Get
+                Return DatabaseVendor.Microsoft
+            End Get
+        End Property
+
         Private ReadOnly _connection As OracleConnection
-        Public Overrides ReadOnly Property Connection As DbConnection
+        Public Overrides ReadOnly Property Connection As IDbConnection
             Get
                 Return _connection
             End Get
         End Property
+
+#End Region
+
+#Region "Values"
+
+        Public Overrides Function ToSql(hodnota As Date?, precision As Integer?) As String
+
+            If (Not hodnota.HasValue) Then Return "NULL"
+
+            Return "to_timestamp('" & If(hodnota.Value < SqlDateTime.MinValue.Value, _
+                            SqlDateTime.MinValue.Value, hodnota.Value).ToString("yyyy-MM-dd HH:mm:ss" & DateTimePrecisionString(precision)) & "', 'YYYY-MM-DD HH24.MI.SSXFF')"
+        End Function
 
 #End Region
 

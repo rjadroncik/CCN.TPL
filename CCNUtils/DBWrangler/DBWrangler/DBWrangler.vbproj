@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="Connectors\DefaultConnector.vb" />
     <Compile Include="Connectors\PgConnector.vb" />
+    <Compile Include="Enums\DatabaseVendor.vb" />
     <Compile Include="Exceptions\FileFormatException.vb" />
     <Compile Include="Exceptions\SqlGenerationException.vb" />
     <Compile Include="Model\Filtering\DBValues.vb" />
@@ -255,6 +256,7 @@
       <Name>CCN.Services</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,7 +1,13 @@
 ﻿Imports CCN.Core.VB
+Imports DBWrangler.Connectors
+Imports DBWrangler.Services.SqlProviders.Oracle
 Imports Oracle.DataAccess.Client
 Imports Npgsql
 Imports System.Text
+Imports DBWrangler.Model.Filtering
+Imports DBWrangler.Services.SqlProviders
+Imports DBWrangler.Model.Slice
+Imports DBWrangler.Model.Schema
 
 <TestClass()>
 Public Class TestSlice
@@ -46,11 +52,11 @@ Public Class TestSlice
         Dim context As New QueryContext()
 
         targetConnector.SqlInsert.Sql(aiAccount, False, sourceConnector.SqlSelect.Execute(aiAccount, New Condition() With {.Expression = whereClause}), result, context)
-        
+
         Dim aiBetIds As New List(Of IEnumerable(Of Object))()
 
         'Const aiBetWhere As String = "WHERE ACCOUNT_ID IN ('2696314', '2707516', '2713630')"
-        
+
         targetConnector.SqlInsert.Sql(aiBet, False, sourceConnector.SqlSelect.Execute(aiBet, New Condition() With {.Expression = whereClause}), result, context)
 
         'Dim aiBetHistoryWhere = "WHERE BET_GUID IN (" & Converting.Values2String(aiBetIds.Select(Function(x) x.First()), Function(x) "'" & x & "'") & ")"
