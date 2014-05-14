@@ -37,22 +37,6 @@ Namespace Model.Filtering
             Next
         End Sub
 
-        'Public Sub New(columns As IEnumerable(Of Column), reader As IDataReader)
-
-        '    For Each column As Column In columns
-
-        '        _values.Add(column.Name, reader(column.Name))
-        '    Next
-        'End Sub
-
-        'Public Sub New(columns As IEnumerable(Of Column), row As DataRow)
-
-        '    For Each column As Column In columns
-
-        '        _values.Add(column.Name, row(column.Name))
-        '    Next
-        'End Sub
-
         Public Sub New(column As String, value As Object)
 
             _values.Add(column, value)
@@ -73,6 +57,25 @@ Namespace Model.Filtering
                 _values.Add(columns(i).Name, values(i))
             Next
         End Sub
+
+        Public Shared Operator =(first As DbValues, second As DbValues) As Boolean
+
+            If (first Is Nothing) Then
+
+                If (second Is Nothing) Then Return True
+
+                Return False
+            Else
+                If (second Is Nothing) Then Return False
+            End If
+
+            Return first.EqualsGeneric(second)
+        End Operator
+
+        Public Shared Operator <>(first As DbValues, second As DbValues) As Boolean
+
+            Return Not (first = second)
+        End Operator
 
 #End Region
 
@@ -99,7 +102,26 @@ Namespace Model.Filtering
 
         Public Function EqualsGeneric(other As DbValues) As Boolean Implements IEquatable(Of DbValues).Equals
 
-            Return _values.Keys.All(Function(key) other.Keys.Contains(key) AndAlso other.Values(key).Equals(_values(key)))
+            For Each key In _values.Keys
+
+                If (Not other.Keys.Contains(key)) Then Return False
+
+                Dim mine = _values(key)
+                Dim their = other.Values(key)
+
+                If (mine Is Nothing) Then
+
+                    If (their IsNot Nothing) Then Return False
+
+                    Continue For
+                Else
+                    If (their Is Nothing) Then Return False
+                End If
+
+                If (Not mine.Equals(their)) Then Return False
+            Next
+
+            Return True
         End Function
 
         Public Overrides Function Equals(obj As Object) As Boolean
@@ -111,7 +133,7 @@ Namespace Model.Filtering
 
         Public Overrides Function GetHashCode() As Integer
 
-            Return CType(_values.Values.Sum(Function(x) CType(x.GetHashCode(), Long)) Mod Integer.MaxValue, Integer)
+            Return CType(_values.Values.Where(Function(x) x IsNot Nothing).Sum(Function(x) CType(x.GetHashCode(), Long)) Mod Integer.MaxValue, Integer)
         End Function
 
 #End Region
