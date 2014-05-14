@@ -27,6 +27,7 @@ Namespace Connectors
             _sqlDrop = New OracleDrop(Me)
             _sqlExists = New OracleExists(Me)
             _sqlInsert = New OracleInsert(Me)
+            _sqlInsertFiltered = New OracleInsertFiltered(Me)
             _sqlJoin = New OracleJoin(Me)
             _sqlSelect = New OracleSelect(Me)
             _sqlTruncate = New OracleTruncate(Me)

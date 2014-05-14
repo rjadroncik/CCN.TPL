@@ -24,6 +24,7 @@ Namespace Connectors
             _sqlDrop = New PgDrop(Me)
             _sqlExists = New PgExists(Me)
             _sqlInsert = New PgInsert(Me)
+            _sqlInsertFiltered = New PgInsertFiltered(Me)
             _sqlJoin = New PgJoin(Me)
             _sqlSelect = New PgSelect(Me)
             _sqlTruncate = New PgTruncate(Me)
