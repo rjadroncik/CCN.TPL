@@ -160,6 +160,7 @@
     </Compile>
     <Compile Include="Connectors\MsConnector.vb" />
     <Compile Include="Connectors\OracleConnector.vb" />
+    <Compile Include="Services\Connector.vb" />
     <Compile Include="Services\SqlProviders\Common\SqlInfo.vb" />
     <Compile Include="Services\SqlProviders\Common\SqlInsertFiltered.vb" />
     <Compile Include="Services\SqlProviders\Microsoft\MsInsertFiltered.vb" />
