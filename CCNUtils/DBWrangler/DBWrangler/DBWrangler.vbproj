@@ -83,6 +83,7 @@
   <ItemGroup>
     <Reference Include="Npgsql, Version=2.0.14.3, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\DBWrangler.TPA\Npgsql\Npgsql.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Oracle.DataAccess">
       <HintPath>..\DBWrangler.TPA\Oracle\Oracle.DataAccess.dll</HintPath>
