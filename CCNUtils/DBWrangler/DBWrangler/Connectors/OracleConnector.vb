@@ -40,7 +40,7 @@ Namespace Connectors
 
         Public Overrides ReadOnly Property Vendor() As DatabaseVendor
             Get
-                Return DatabaseVendor.Microsoft
+                Return DatabaseVendor.Oracle
             End Get
         End Property
 
