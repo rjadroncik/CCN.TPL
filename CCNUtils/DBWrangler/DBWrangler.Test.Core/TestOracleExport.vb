@@ -16,7 +16,7 @@ Public Class TestOracleExport
                                                                                     "accountisolation", "sporting"))
         connection.Open()
 
-        Dim tables = New String() {"AI_ACCOUNT", "AI_BET", "AI_BET_HISTORY", "AI_BET_JOURNAL", "AI_NOTE"} '{"AI_BET"} '{"AI_PERMISSION", "AI_ROLE", "AI_ROLE_PERMISSION"}
+        Dim tables = New String() {"AI_ACCOUNT", "AI_BET", "AI_BET_HISTORY", "AI_BET_JOURNAL", "AI_NOTE", "AI_PERMISSION", "AI_ROLE", "AI_ROLE_PERMISSION", "AI_SECURITY_LOG"}
 
         Dim schema As Schema = OracleExport.Execute(tables, "ACCOUNTISOLATION", New ProgressReporter(), New OracleConnector(connection))
 
