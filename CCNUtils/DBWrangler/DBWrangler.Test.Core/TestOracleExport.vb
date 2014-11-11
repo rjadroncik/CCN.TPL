@@ -5,6 +5,7 @@ Imports DBWrangler.Services.IO
 Imports Oracle.DataAccess.Client
 Imports Npgsql
 Imports DBWrangler.Model.Schema
+Imports System.Xml.Schema
 
 <TestClass()>
 Public Class TestOracleExport
@@ -16,7 +17,7 @@ Public Class TestOracleExport
                                                                                     "accountisolation", "sporting"))
         connection.Open()
 
-        Dim tables = New String() {"AI_ACCOUNT", "AI_BET", "AI_BET_HISTORY", "AI_BET_JOURNAL", "AI_NOTE", "AI_PERMISSION", "AI_ROLE", "AI_ROLE_PERMISSION", "AI_SECURITY_LOG"}
+        Dim tables = New String() {"STAGE_AI_ACCOUNT", "STAGE_AI_BET", "STAGE_AI_BET_HISTORY", "STAGE_AI_BET_JOURNAL", "STAGE_COMMITS"}
 
         Dim schema As Schema = OracleExport.Execute(tables, "ACCOUNTISOLATION", New ProgressReporter(), New OracleConnector(connection))
 
@@ -25,6 +26,10 @@ Public Class TestOracleExport
         SchemaXmlWriter.Write(schema, fileExported)
 
         Dim schemaReconstructed As Schema = SchemaXmlReader.Read(fileExported)
+
+        Dim connector = New PgConnector(Nothing)
+        
+        Dim sql = connector.SqlCreate.Sql(schemaReconstructed, True, True, True, True, True)
 
     End Sub
 
