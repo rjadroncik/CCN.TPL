@@ -2,13 +2,43 @@
 Imports DBWrangler.Connectors
 Imports DBWrangler.Services.SqlProviders.Oracle
 Imports DBWrangler.Services.IO
+Imports System.IO
 Imports Oracle.DataAccess.Client
 Imports Npgsql
 Imports DBWrangler.Model.Schema
 Imports System.Xml.Schema
+Imports System.Text
+Imports DBWrangler.Services.SqlProviders
 
 <TestClass()>
 Public Class TestOracleExport
+
+    <TestMethod()>
+    Public Sub SecurityServiceDataMigration()
+
+        Dim connection = New OracleConnection(OracleConnector.BuildConnectionString("IDATLAS", Nothing, "accountisolation", "sporting"))
+        connection.Open()
+
+        Dim tables = New String() {"AI_PERMISSION", "AI_ROLE", "AI_ROLE_PERMISSION"}
+
+        Dim schema As Schema = OracleExport.Execute(tables, "ACCOUNTISOLATION", New ProgressReporter(), New OracleConnector(connection))
+
+        Dim connectorOracle = New OracleConnector(connection)
+        Dim connectorPg = New PgConnector(Nothing)
+
+        For Each table As Object In schema.Tables
+
+            Dim result As New StringBuilder
+            Dim context As New QueryContext
+
+            connectorPg.SqlInsert.Sql(table, False, connectorOracle.SqlSelect.Execute(table), result, context, 1000)
+
+            Using writer = New StreamWriter(table.Name & ".sql")
+
+                writer.Write(result.ToString())
+            End Using
+        Next
+    End Sub
 
     <TestMethod()>
     Public Sub TestExportOracle()
@@ -28,7 +58,7 @@ Public Class TestOracleExport
         Dim schemaReconstructed As Schema = SchemaXmlReader.Read(fileExported)
 
         Dim connector = New PgConnector(Nothing)
-        
+
         Dim sql = connector.SqlCreate.Sql(schemaReconstructed, True, True, True, True, True)
 
     End Sub

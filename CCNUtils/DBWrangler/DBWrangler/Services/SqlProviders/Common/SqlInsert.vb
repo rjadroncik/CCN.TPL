@@ -15,7 +15,7 @@ Namespace Services.SqlProviders.Common
 
         Protected Overridable Function InsertBegin(table As Table, skipIdentities As Boolean) As String
 
-            Return "INSERT INTO " & table.Name & " (" & ColumnList(table.Columns, skipIdentities) & ") " & "VALUES "
+            Return "INSERT INTO " & table.Name & " (" & ColumnList(table.Columns, skipIdentities) & ") " & "VALUES " & Environment.NewLine
         End Function
 
         Protected Overridable Function InsertBegin(table As Table, values As DbValues) As String
@@ -35,7 +35,7 @@ Namespace Services.SqlProviders.Common
 
                 If (Not reader.Read()) Then reader.Close() : Exit While
 
-                If (count > 0) Then sql.Append(", ")
+                If (count > 0) Then sql.Append("," & Environment.NewLine)
 
                 sql.Append(InsertRow(table, skipIdentities, reader, context))
 
