@@ -25,17 +25,15 @@ Namespace Services.SqlProviders.Oracle
 
                 If (Not reader.Read()) Then reader.Close() : Exit While
 
-                If (count > 0) Then sql.Append("," & Environment.NewLine)
-
                 sql.Append(InsertBegin(table, skipIdentities))
                 sql.Append(RowValues(table, skipIdentities, reader, context))
+                sql.Append(";" & Environment.NewLine)
 
                 count += 1
             End While
 
             If (count > 0) Then
 
-                sql.Append(";" & Environment.NewLine)
                 Return sql.ToString()
             End If
 
