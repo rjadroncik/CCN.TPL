@@ -26,7 +26,7 @@ Public Class TestOracleExport
         Dim connectorOracle = New OracleConnector(connection)
         Dim connectorPg = New PgConnector(Nothing)
 
-        For Each table As Object In schema.Tables
+        For Each table In schema.Tables
 
             Dim result As New StringBuilder
             Dim context As New QueryContext
