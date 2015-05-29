@@ -37,7 +37,7 @@ Namespace Services.SqlProviders.Common
 
                 If (count > 0) Then sql.Append("," & Environment.NewLine)
 
-                sql.Append(InsertRow(table, skipIdentities, reader, context))
+                sql.Append(RowValues(table, skipIdentities, reader, context))
 
                 count += 1
             End While
@@ -51,7 +51,7 @@ Namespace Services.SqlProviders.Common
             Return String.Empty
         End Function
 
-        Protected Overridable Function InsertRow(table As Table, skipIdentities As Boolean, reader As IDataReader, context As QueryContext) As String
+        Protected Overridable Function RowValues(table As Table, skipIdentities As Boolean, reader As IDataReader, context As QueryContext) As String
 
             Dim sql As String = "("
 
