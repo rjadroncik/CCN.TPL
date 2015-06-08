@@ -69,7 +69,7 @@ Namespace Services.SqlProviders.Postgre
                                                                   If(readerColumns.IsDBNull(5), Nothing, New Integer?(readerColumns.GetInt32(5)))))
 
                     column.Name = readerColumns.GetString(0)
-                    column.Nullable = If(readerColumns.GetString(1) = "YES", True, False)
+                    column.Nullable = readerColumns.GetString(1) = "YES"
 
                     If ((column.DataType IsNot Nothing)) Then table.Columns.Add(column)
                 End While
@@ -102,9 +102,10 @@ Namespace Services.SqlProviders.Postgre
 
                 Case "smallint"
                     Return New DTInt16()
-                Case "int"
+                Case "int", "integer", "serial"
                     Return New DTInt32()
-                Case "bigint", "timestamp"
+
+                Case "bigint", "timestamp", "bigserial"
                     Return New DTInt64()
 
                 Case "uniqueidentifier"
