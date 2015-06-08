@@ -111,7 +111,7 @@ Namespace Connectors
 
             If (hodnota Is Nothing) Then Return "NULL"
 
-            'TODO: [DBWrangler] DTVariant - ToSql
+            'TODO: [DBWrangler] DtVariant - ToSql
             Return hodnota.ToString()
         End Function
 

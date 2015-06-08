@@ -70,20 +70,20 @@ Public Class TestXML
 
         user.Name = "user"
 
-        Dim userId As New Column(user, New DTInt32())
+        Dim userId As New Column(user, New DtInt32())
         userId.Name = "id"
         userId.Identity = True
         userId.Nullable = False
 
         user.Columns.Add(userId)
 
-        Dim userLogin As New Column(user, New DTString(32))
+        Dim userLogin As New Column(user, New DtString(32))
         userLogin.Name = "login"
         userLogin.Nullable = False
 
         user.Columns.Add(userLogin)
 
-        Dim userPassword As New Column(user, New DTString(32))
+        Dim userPassword As New Column(user, New DtString(32))
         userPassword.Name = "password"
         userPassword.Nullable = False
 
@@ -106,14 +106,14 @@ Public Class TestXML
 
         role.Name = "role"
 
-        Dim roleId As New Column(role, New DTInt32())
+        Dim roleId As New Column(role, New DtInt32())
         roleId.Name = "id"
         roleId.Identity = True
         roleId.Nullable = False
 
         role.Columns.Add(roleId)
 
-        Dim roleName As New Column(role, New DTString(32))
+        Dim roleName As New Column(role, New DtString(32))
         roleName.Name = "login"
         roleName.Nullable = False
 
@@ -130,13 +130,13 @@ Public Class TestXML
 
         userRole.Name = "user_role"
 
-        Dim userRoleUserId As New Column(userRole, New DTInt32())
+        Dim userRoleUserId As New Column(userRole, New DtInt32())
         userRoleUserId.Name = "user_id"
         userRoleUserId.Nullable = False
 
         userRole.Columns.Add(userRoleUserId)
 
-        Dim userRoleRoleId As New Column(userRole, New DTInt32())
+        Dim userRoleRoleId As New Column(userRole, New DtInt32())
         userRoleRoleId.Name = "role_id"
         userRoleRoleId.Nullable = False
 

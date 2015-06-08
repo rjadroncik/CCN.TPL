@@ -324,10 +324,10 @@ Namespace Services.SqlProviders.Oracle
 
                             Dim columnRK As Column = foreignKey.Columns(columnFK)
 
-                            If ((TypeOf columnFK.DataType Is DTDecimal) AndAlso (TypeOf columnRK.DataType Is DTDecimal)) Then
+                            If ((TypeOf columnFK.DataType Is DtDecimal) AndAlso (TypeOf columnRK.DataType Is DtDecimal)) Then
 
-                                Dim datatypeFK As DTDecimal = DirectCast(columnFK.DataType, DTDecimal)
-                                Dim datatypeRK As DTDecimal = DirectCast(columnRK.DataType, DTDecimal)
+                                Dim datatypeFK As DtDecimal = DirectCast(columnFK.DataType, DtDecimal)
+                                Dim datatypeRK As DtDecimal = DirectCast(columnRK.DataType, DtDecimal)
 
                                 If (datatypeFK.Precision < datatypeRK.Precision) Then
 
@@ -354,17 +354,17 @@ Namespace Services.SqlProviders.Oracle
                                 Continue For
                             End If
 
-                            If ((TypeOf columnFK.DataType Is DTDecimal) AndAlso (TypeOf columnRK.DataType Is DTDouble)) Then
+                            If ((TypeOf columnFK.DataType Is DtDecimal) AndAlso (TypeOf columnRK.DataType Is DtDouble)) Then
 
-                                columnFK.DataType = New DTDouble()
+                                columnFK.DataType = New DtDouble()
 
                                 changeOccurred = True
                                 Continue For
                             End If
 
-                            If ((TypeOf columnFK.DataType Is DTDouble) AndAlso (TypeOf columnRK.DataType Is DTDecimal)) Then
+                            If ((TypeOf columnFK.DataType Is DtDouble) AndAlso (TypeOf columnRK.DataType Is DtDecimal)) Then
 
-                                columnRK.DataType = New DTDouble()
+                                columnRK.DataType = New DtDouble()
 
                                 changeOccurred = True
                                 Continue For
@@ -380,15 +380,15 @@ Namespace Services.SqlProviders.Oracle
             Select Case type
 
                 Case "INTEGER"
-                    Return New DTInt32()
+                    Return New DtInt32()
                 Case "NUMBER"
-                    Return New DTDecimal(precision, scale)
+                    Return New DtDecimal(precision, scale)
                 Case "CHAR"
-                    Return If(length = 1, DirectCast(New DTChar(), DataType), New DTString(length, True))
+                    Return If(length = 1, DirectCast(New DTChar(), DataType), New DtString(length, True))
                 Case "VARCHAR2"
-                    Return New DTString(length, False)
+                    Return New DtString(length, False)
                 Case "DATE"
-                    Return New DTDate()
+                    Return New DtDate()
             End Select
 
             If (type.StartsWith("TIMESTAMP")) Then
@@ -397,9 +397,9 @@ Namespace Services.SqlProviders.Oracle
 
                     Dim precisionParsed = Integer.Parse(type.Substring(type.IndexOf("("c) + 1, type.Length - 2 - type.IndexOf("("c)))
 
-                    Return New DTTimestamp(precisionParsed)
+                    Return New DtTimestamp(precisionParsed)
                 Else
-                    Return New DTTimestamp(precision)
+                    Return New DtTimestamp(precision)
                 End If
             End If
 

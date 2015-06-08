@@ -98,53 +98,53 @@ Namespace Services.SqlProviders.Postgre
             Select Case type
 
                 Case "tinyint"
-                    Return New DTByte()
+                    Return New DtByte()
 
                 Case "smallint"
-                    Return New DTInt16()
+                    Return New DtInt16()
                 Case "int", "integer", "serial"
-                    Return New DTInt32()
+                    Return New DtInt32()
 
                 Case "bigint", "timestamp", "bigserial"
-                    Return New DTInt64()
+                    Return New DtInt64()
 
                 Case "uniqueidentifier"
-                    Return New DTGuid()
+                    Return New DtGuid()
 
                 Case "float"
-                    Return New DTDouble()
+                    Return New DtDouble()
                 Case "real"
-                    Return New DTSingle()
+                    Return New DtSingle()
 
                 Case "decimal", "numeric"
-                    Return New DTDecimal(precision.Value, If(Not scale.HasValue, 0, scale.Value))
+                    Return New DtDecimal(precision.Value, If(Not scale.HasValue, 0, scale.Value))
                 Case "money"
-                    Return New DTDecimal(precision.Value, If(Not scale.HasValue, 0, scale.Value), True)
+                    Return New DtDecimal(precision.Value, If(Not scale.HasValue, 0, scale.Value), True)
 
                 Case "nchar"
-                    Return If(length = 1, DirectCast(New DTChar(), DataType), New DTString(length.Value, True))
+                    Return If(length = 1, DirectCast(New DTChar(), DataType), New DtString(length.Value, True))
                 Case "char"
-                    Return If(length = 1, DirectCast(New DTChar(False), DataType), New DTString(length.Value, True, False))
+                    Return If(length = 1, DirectCast(New DTChar(False), DataType), New DtString(length.Value, True, False))
 
                 Case "nvarchar", "ntext"
-                    Return New DTString(length.Value, False)
+                    Return New DtString(length.Value, False)
                 Case "varchar", "text"
-                    Return New DTString(length.Value, False, False)
+                    Return New DtString(length.Value, False, False)
 
                 Case "date", "datetime"
-                    Return New DTDate()
+                    Return New DtDate()
 
                 Case "smalldatetime"
-                    Return New DTDate(True)
+                    Return New DtDate(True)
 
                 Case "bit"
-                    Return New DTBoolean()
+                    Return New DtBoolean()
 
                 Case "image", "binary", "varbinary"
-                    Return New DTByteArray()
+                    Return New DtByteArray()
 
                 Case "sql_variant"
-                    Return New DTVariant()
+                    Return New DtVariant()
             End Select
 
             Throw New InvalidCastException("Cant map DB datatype: " & type)

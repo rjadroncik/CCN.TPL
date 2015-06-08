@@ -61,7 +61,7 @@ Namespace Connectors
 
 #Region "Datatypes"
 
-        Public Overrides Function ToSql(typ As DTInt32) As String
+        Public Overrides Function ToSql(typ As DtInt32) As String
 
             Return "INT"
         End Function
@@ -71,7 +71,7 @@ Namespace Connectors
             Return "CHAR(1)"
         End Function
 
-        Public Overrides Function ToSql(typ As DTString) As String
+        Public Overrides Function ToSql(typ As DtString) As String
 
             With typ
                 If (.Size > If(.Unicode, 4000, 8000)) Then Return "TEXT"

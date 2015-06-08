@@ -67,12 +67,12 @@ Namespace Connectors
 
 #Region "Datatypes"
 
-        Public Overrides Function ToSql(typ As DTDate) As String
+        Public Overrides Function ToSql(typ As DtDate) As String
 
             Return If(typ.LowPrecision, "SMALLDATETIME", "DATETIME")
         End Function
 
-        Public Overrides Function ToSql(typ As DTDecimal) As String
+        Public Overrides Function ToSql(typ As DtDecimal) As String
 
             With typ
                 If (.Money) Then Return "MONEY"
@@ -86,12 +86,12 @@ Namespace Connectors
             End With
         End Function
 
-        Public Overrides Function ToSql(typ As DTSingle) As String
+        Public Overrides Function ToSql(typ As DtSingle) As String
 
             Return "REAL"
         End Function
 
-        Public Overrides Function ToSql(typ As DTDouble) As String
+        Public Overrides Function ToSql(typ As DtDouble) As String
 
             Return "FLOAT"
         End Function
@@ -101,54 +101,54 @@ Namespace Connectors
             Return If(typ.Unicode, "N", "") & "CHAR(1)"
         End Function
 
-        Public Overrides Function ToSql(typ As DTByte) As String
+        Public Overrides Function ToSql(typ As DtByte) As String
 
             Return "TINYINT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTInt16) As String
+        Public Overrides Function ToSql(typ As DtInt16) As String
 
             Return "SMALLINT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTInt32) As String
+        Public Overrides Function ToSql(typ As DtInt32) As String
 
             Return "INT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTInt64) As String
+        Public Overrides Function ToSql(typ As DtInt64) As String
 
             Return "BIGINT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTGuid) As String
+        Public Overrides Function ToSql(typ As DtGuid) As String
 
             Return "UNIQUEIDENTIFIER"
         End Function
 
-        Public Overrides Function ToSql(typ As DTString) As String
+        Public Overrides Function ToSql(typ As DtString) As String
 
             With typ
                 Return If(.SizeFixed, "", "VAR") & "CHAR(" & If(.Size = -1, "32767", .Size.ToStringInvariant()) & ")"
             End With
         End Function
 
-        Public Overrides Function ToSql(typ As DTBoolean) As String
+        Public Overrides Function ToSql(typ As DtBoolean) As String
 
             Return "BIT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTByteArray) As String
+        Public Overrides Function ToSql(typ As DtByteArray) As String
 
             Return "VARBINARY(MAX)"
         End Function
 
-        Public Overrides Function ToSql(typ As DTVariant) As String
+        Public Overrides Function ToSql(typ As DtVariant) As String
 
             Return "SQL_VARIANT"
         End Function
 
-        Public Overrides Function ToSql(typ As DTTimestamp) As String
+        Public Overrides Function ToSql(typ As DtTimestamp) As String
 
             Return "TIMESTAMP" & If(typ.Precision.HasValue, "(" & typ.Precision.Value & ")", "")
         End Function

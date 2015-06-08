@@ -198,41 +198,41 @@ Namespace Services.IO
 
             Select Case ReadText(xDataType.Attributes.Where(Function(x) x.Name.LocalName = "type").Single())
                 Case "cdw:dt_string"
-                    Return New DTString(ReadInteger(xDataType.Attribute("size")), _
+                    Return New DtString(ReadInteger(xDataType.Attribute("size")), _
                                         ReadBooleanOptional(xDataType.Attribute("size_fixed")).GetValueOrDefault(),
                                         ReadBooleanOptional(xDataType.Attribute("unicode")).GetValueOrDefault(True))
                 Case "cdw:dt_char"
                     Return New DTChar(ReadBooleanOptional(xDataType.Attribute("unicode")).GetValueOrDefault(True))
                 Case "cdw:dt_int16"
-                    Return New DTInt16()
+                    Return New DtInt16()
                 Case "cdw:dt_int32"
-                    Return New DTInt32()
+                    Return New DtInt32()
                 Case "cdw:dt_int64"
-                    Return New DTInt64()
+                    Return New DtInt64()
 
                 Case "cdw:dt_guid"
-                    Return New DTGuid()
+                    Return New DtGuid()
 
                 Case "cdw:dt_decimal"
-                    Return New DTDecimal(ReadIntegerOptional(xDataType.Attribute("precision")), _
+                    Return New DtDecimal(ReadIntegerOptional(xDataType.Attribute("precision")), _
                                          ReadIntegerOptional(xDataType.Attribute("scale")), _
                                          ReadBooleanOptional(xDataType.Attribute("money")).GetValueOrDefault())
                 Case "cdw:dt_single"
-                    Return New DTSingle()
+                    Return New DtSingle()
                 Case "cdw:dt_double"
-                    Return New DTDouble()
+                    Return New DtDouble()
                 Case "cdw:dt_date"
-                    Return New DTDate(ReadBooleanOptional(xDataType.Attribute("low_precision")).GetValueOrDefault())
+                    Return New DtDate(ReadBooleanOptional(xDataType.Attribute("low_precision")).GetValueOrDefault())
                 Case "cdw:dt_boolean"
-                    Return New DTBoolean()
+                    Return New DtBoolean()
                 Case "cdw:dt_byte"
-                    Return New DTByte()
+                    Return New DtByte()
                 Case "cdw:dt_bytearray"
-                    Return New DTByteArray()
+                    Return New DtByteArray()
                 Case "cdw:dt_variant"
-                    Return New DTVariant()
+                    Return New DtVariant()
                 Case "cdw:dt_timestamp"
-                    Return New DTTimestamp(ReadIntegerOptional(xDataType.Attribute("precision")))
+                    Return New DtTimestamp(ReadIntegerOptional(xDataType.Attribute("precision")))
             End Select
 
             Throw New ArgumentOutOfRangeException("Unsupported DB type: '" & ReadText(xDataType.Attribute("db_type")).ToString() & "'.")

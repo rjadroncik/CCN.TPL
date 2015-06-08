@@ -162,24 +162,24 @@ Namespace Services.IO
 
         Private Shared Sub WriteDataType(datatype As DataType)
 
-            If (TypeOf datatype Is DTString) Then WriteString(DirectCast(datatype, DTString)) : Return
+            If (TypeOf datatype Is DtString) Then WriteString(DirectCast(datatype, DtString)) : Return
             If (TypeOf datatype Is DTChar) Then WriteChar(DirectCast(datatype, DTChar)) : Return
-            If (TypeOf datatype Is DTDecimal) Then WriteDecimal(DirectCast(datatype, DTDecimal)) : Return
-            If (TypeOf datatype Is DTSingle) Then WriteSingle(DirectCast(datatype, DTSingle)) : Return
-            If (TypeOf datatype Is DTDouble) Then WriteDouble(DirectCast(datatype, DTDouble)) : Return
-            If (TypeOf datatype Is DTDate) Then WriteDate(DirectCast(datatype, DTDate)) : Return
-            If (TypeOf datatype Is DTInt16) Then WriteInt16(DirectCast(datatype, DTInt16)) : Return
-            If (TypeOf datatype Is DTInt32) Then WriteInt32(DirectCast(datatype, DTInt32)) : Return
-            If (TypeOf datatype Is DTInt64) Then WriteInt64(DirectCast(datatype, DTInt64)) : Return
-            If (TypeOf datatype Is DTGuid) Then WriteGuid(DirectCast(datatype, DTGuid)) : Return
-            If (TypeOf datatype Is DTBoolean) Then WriteBoolean(DirectCast(datatype, DTBoolean)) : Return
-            If (TypeOf datatype Is DTByte) Then WriteByte(DirectCast(datatype, DTByte)) : Return
-            If (TypeOf datatype Is DTByteArray) Then WriteByteArray(DirectCast(datatype, DTByteArray)) : Return
-            If (TypeOf datatype Is DTVariant) Then WriteVariant(DirectCast(datatype, DTVariant)) : Return
-            If (TypeOf datatype Is DTTimestamp) Then WriteTimestamp(DirectCast(datatype, DTTimestamp)) : Return
+            If (TypeOf datatype Is DtDecimal) Then WriteDecimal(DirectCast(datatype, DtDecimal)) : Return
+            If (TypeOf datatype Is DtSingle) Then WriteSingle(DirectCast(datatype, DtSingle)) : Return
+            If (TypeOf datatype Is DtDouble) Then WriteDouble(DirectCast(datatype, DtDouble)) : Return
+            If (TypeOf datatype Is DtDate) Then WriteDate(DirectCast(datatype, DtDate)) : Return
+            If (TypeOf datatype Is DtInt16) Then WriteInt16(DirectCast(datatype, DtInt16)) : Return
+            If (TypeOf datatype Is DtInt32) Then WriteInt32(DirectCast(datatype, DtInt32)) : Return
+            If (TypeOf datatype Is DtInt64) Then WriteInt64(DirectCast(datatype, DtInt64)) : Return
+            If (TypeOf datatype Is DtGuid) Then WriteGuid(DirectCast(datatype, DtGuid)) : Return
+            If (TypeOf datatype Is DtBoolean) Then WriteBoolean(DirectCast(datatype, DtBoolean)) : Return
+            If (TypeOf datatype Is DtByte) Then WriteByte(DirectCast(datatype, DtByte)) : Return
+            If (TypeOf datatype Is DtByteArray) Then WriteByteArray(DirectCast(datatype, DtByteArray)) : Return
+            If (TypeOf datatype Is DtVariant) Then WriteVariant(DirectCast(datatype, DtVariant)) : Return
+            If (TypeOf datatype Is DtTimestamp) Then WriteTimestamp(DirectCast(datatype, DtTimestamp)) : Return
         End Sub
 
-        Private Shared Sub WriteString(datatype As DTString)
+        Private Shared Sub WriteString(datatype As DtString)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_string")
@@ -197,42 +197,42 @@ Namespace Services.IO
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteInt16(datatype As DTInt16)
+        Private Shared Sub WriteInt16(datatype As DtInt16)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_int16")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteInt32(datatype As DTInt32)
+        Private Shared Sub WriteInt32(datatype As DtInt32)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_int32")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteInt64(datatype As DTInt64)
+        Private Shared Sub WriteInt64(datatype As DtInt64)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_int64")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteGuid(datatype As DTGuid)
+        Private Shared Sub WriteGuid(datatype As DtGuid)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_guid")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteVariant(datatype As DTVariant)
+        Private Shared Sub WriteVariant(datatype As DtVariant)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_variant")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteDecimal(datatype As DTDecimal)
+        Private Shared Sub WriteDecimal(datatype As DtDecimal)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_decimal")
@@ -243,21 +243,21 @@ Namespace Services.IO
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteSingle(datatype As DTSingle)
+        Private Shared Sub WriteSingle(datatype As DtSingle)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_single")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteDouble(datatype As DTDouble)
+        Private Shared Sub WriteDouble(datatype As DtDouble)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_double")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteDate(datatype As DTDate)
+        Private Shared Sub WriteDate(datatype As DtDate)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_date")
@@ -265,28 +265,28 @@ Namespace Services.IO
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteBoolean(datatype As DTBoolean)
+        Private Shared Sub WriteBoolean(datatype As DtBoolean)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_boolean")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteByte(datatype As DTByte)
+        Private Shared Sub WriteByte(datatype As DtByte)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_byte")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteByteArray(datatype As DTByteArray)
+        Private Shared Sub WriteByteArray(datatype As DtByteArray)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_bytearray")
             _writer.WriteEndElement()
         End Sub
 
-        Private Shared Sub WriteTimestamp(datatype As DTTimestamp)
+        Private Shared Sub WriteTimestamp(datatype As DtTimestamp)
 
             WriteStartElement("datatype")
             _writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "cdw:dt_timestamp")
