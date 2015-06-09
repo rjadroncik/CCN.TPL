@@ -21,7 +21,7 @@ Namespace Model.Schema.Datatypes
 
         Public Overrides Function ValueToSql(hodnota As Object, connector As IConnector) As String
 
-            Return connector.ToSql(DirectCast(hodnota, Integer?))
+            Return connector.ToSql(DirectCast(hodnota, Int16?))
         End Function
 
         Public Overrides ReadOnly Property Type As System.Type
