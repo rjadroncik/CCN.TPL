@@ -1,6 +1,4 @@
-﻿
-Imports CCN.Core.VB
-Imports DBWrangler.Model.Schema
+﻿Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Filtering
 
 Namespace Services.SqlProviders

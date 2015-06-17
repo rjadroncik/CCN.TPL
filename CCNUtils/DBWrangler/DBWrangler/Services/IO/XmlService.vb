@@ -1,8 +1,7 @@
-﻿Imports CCN.Core.VB
-
+﻿
 Namespace Services.IO
 
-    Public Class XmlService
+    Public MustInherit Class XmlService
 
 #Region "Nacitavanie atomickych hodnot - elementy"
 

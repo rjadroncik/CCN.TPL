@@ -1,5 +1,4 @@
 ﻿Imports System.Text
-Imports CCN.Core.VB
 Imports DBWrangler.Connectors
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Filtering

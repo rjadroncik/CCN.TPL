@@ -1,5 +1,4 @@
-﻿Imports CCN.Core.VB
-Imports DBWrangler.Connectors
+﻿Imports DBWrangler.Connectors
 Imports DBWrangler.Services.SqlProviders.Oracle
 Imports DBWrangler.Services.IO
 Imports System.IO

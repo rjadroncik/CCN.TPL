@@ -1,6 +1,5 @@
 ﻿Imports DBWrangler.Connectors
 Imports DBWrangler.Model.Schema
-Imports CCN.Core.VB
 
 Namespace Model.Filtering
     Public Class DbValues

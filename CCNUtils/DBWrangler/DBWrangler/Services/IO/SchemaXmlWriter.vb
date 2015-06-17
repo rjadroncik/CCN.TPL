@@ -1,5 +1,4 @@
 ﻿Imports System.Xml
-Imports CCN.Core.VB
 Imports DBWrangler.Model.Filtering
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Base

@@ -1,5 +1,4 @@
 ﻿Imports System.Data.Common
-Imports CCN.Core.VB
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Services.SqlProviders.Common

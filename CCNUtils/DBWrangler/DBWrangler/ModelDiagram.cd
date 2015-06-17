@@ -1,242 +1,748 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DBWrangler.Condition" Collapsed="true">
+  <Class Name="DBWrangler.Model.Filtering.Condition" Collapsed="true">
     <Position X="14.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAQAAQAAgAAABg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAEAAAAAQAAQAAgAAAAg=</HashCode>
       <FileName>Model\Filtering\Condition.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Variable" Collapsed="true">
+  <Class Name="DBWrangler.Model.Filtering.Variable" Collapsed="true">
     <Position X="2.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAACAA=</HashCode>
       <FileName>Model\Filtering\Variable.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DBValues" Collapsed="true">
-    <Position X="14.25" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAkAAAAACA=</HashCode>
-      <FileName>Model\Filtering\DBValues.vb</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="DBWrangler.DataType" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Base.DataType" Collapsed="true">
     <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAgAEAAAAAAAQAAgIAAAAA=</HashCode>
       <FileName>Model\Schema\Base\DataType.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Element" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Base.Element" Collapsed="true">
     <Position X="6" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\Base\Element.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.TableElement" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Base.TableElement" Collapsed="true">
     <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\Base\TableElement.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtDate" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtDate" Collapsed="true">
     <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtDate.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtDecimal" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtDecimal" Collapsed="true">
     <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAIAAAAgAEAAAAAAAQAAgAAAEAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtDecimal.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtDouble" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtDouble" Collapsed="true">
     <Position X="7.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtDouble.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DTChar" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtChar" Collapsed="true">
     <Position X="9.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgQEAAAAAAAQAAgAAAAAA=</HashCode>
-      <FileName>Model\Schema\Datatypes\DTChar.vb</FileName>
+      <FileName>Model\Schema\Datatypes\DtChar.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtString" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtString" Collapsed="true">
     <Position X="2.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAgAAAAAAAAAAgQEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtString.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Column" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Column" Collapsed="true">
     <Position X="6" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIBAAAEAIAAAAAAAAAAAAAAAEAAAAIAAAA=</HashCode>
       <FileName>Model\Schema\Column.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.ColumnList" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.ColumnList" Collapsed="true">
     <Position X="7.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Model\Schema\ColumnList.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Index" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Index" Collapsed="true">
     <Position X="8.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\Index.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.KeyForeign" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.KeyForeign" Collapsed="true">
     <Position X="4.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Model\Schema\KeyForeign.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.KeyPrimary" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.KeyPrimary" Collapsed="true">
     <Position X="6.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\KeyPrimary.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.KeyUnique" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.KeyUnique" Collapsed="true">
     <Position X="6.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\KeyUnique.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Schema" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Schema" Collapsed="true">
     <Position X="14.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IBAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Schema\Schema.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Table" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Table" Collapsed="true">
     <Position X="6.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEQAwFAAAAAAAAgAAAAAAAEAAAAAAAABAAAAAoAoAA=</HashCode>
       <FileName>Model\Schema\Table.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Query" Collapsed="true">
+  <Class Name="DBWrangler.Model.Slice.Query" Collapsed="true">
     <Position X="10.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Slice\Query.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.QueryJoin" Collapsed="true">
+  <Class Name="DBWrangler.Model.Slice.QueryJoin" Collapsed="true">
     <Position X="9.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAQAQAAAADAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Slice\QueryJoin.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.Slice" Collapsed="true">
+  <Class Name="DBWrangler.Model.Slice.Slice" Collapsed="true">
     <Position X="14.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAgAAAAQAQAAAAgAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Slice\Slice.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtBoolean" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtBoolean" Collapsed="true">
     <Position X="11" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtBoolean.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtVariant" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtVariant" Collapsed="true">
     <Position X="16.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtVariant.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtByte" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtByte" Collapsed="true">
     <Position X="19.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtByte.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtByteArray" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtByteArray" Collapsed="true">
     <Position X="23.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtByteArray.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtGuid" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtGuid" Collapsed="true">
     <Position X="12.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtGuid.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtInt16" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtInt16" Collapsed="true">
     <Position X="18" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtInt16.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtInt32" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtInt32" Collapsed="true">
     <Position X="21.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtInt32.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtInt64" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtInt64" Collapsed="true">
     <Position X="25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtInt64.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtSingle" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtSingle" Collapsed="true">
     <Position X="14.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAQAAgAAAAAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtSingle.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.DtTimestamp" Collapsed="true">
+  <Class Name="DBWrangler.Model.Schema.Datatypes.DtTimestamp" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAgAEAAAAAAAQAAgAAAEAA=</HashCode>
       <FileName>Model\Schema\Datatypes\DtTimestamp.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.QueryCondition" Collapsed="true">
+  <Class Name="DBWrangler.Model.Slice.QueryCondition" Collapsed="true">
     <Position X="12" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Slice\QueryCondition.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DBWrangler.QueryJoinKey" Collapsed="true">
+  <Class Name="DBWrangler.Model.Slice.QueryJoinKey" Collapsed="true">
     <Position X="9.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Slice\QueryJoinKey.vb</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DBWrangler.Connectors.DefaultConnector" Collapsed="true">
+    <Position X="2.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQASiAAABAFEDQgAAgEBABGCCC0BBAGAAFAAAAQA=</HashCode>
+      <FileName>Connectors\DefaultConnector.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DBWrangler.Connectors.MsConnector" Collapsed="true">
+    <Position X="4.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAwATgBAABAAEBQAAIAAFAFASAAABAgGABIAAABQA=</HashCode>
+      <FileName>Connectors\MsConnector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Connectors.OracleConnector" Collapsed="true">
+    <Position X="2.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAwATgBAABAAUBQAAIgAFAFESAAABAgGABIAAABQA=</HashCode>
+      <FileName>Connectors\OracleConnector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Connectors.PgConnector" Collapsed="true">
+    <Position X="0.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAwATgBAABAAUBQAAIAAFAFESAAABAgGABIAAABQA=</HashCode>
+      <FileName>Connectors\PgConnector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Exceptions.FileFormatException" Collapsed="true">
+    <Position X="103" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\FileFormatException.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Exceptions.SqlGenerationException" Collapsed="true">
+    <Position X="103" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\SqlGenerationException.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.UnrecognizedEnumValueException" Collapsed="true">
+    <Position X="97.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\UnrecognizedEnumValueException.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.OracleJoin" Collapsed="true">
+    <Position X="66" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleJoin.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Converting" Collapsed="true">
+    <Position X="99.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAlAAEAEEAIAQQCgAJgAAAAIAAAAEAAAAAKACAAA=</HashCode>
+      <FileName>Converting.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.ProgressReporter" Collapsed="true">
+    <Position X="103" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAGgEAAACAAAA=</HashCode>
+      <FileName>ProgressReporter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Model.Filtering.DbValues" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="101.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUgAAAAAAAAEiAAAAAAAAAAACIAAAAAkAAAAACA=</HashCode>
+      <FileName>Model\Filtering\DBValues.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DBWrangler.Services.Connector" Collapsed="true">
+    <Position X="97.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Connector.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.IO.SchemaXmlReader" Collapsed="true">
+    <Position X="13" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQBAggQEAQCggAAAEBAgAAAAEAAAEAAAAAAAAAg=</HashCode>
+      <FileName>Services\IO\SchemaXmlReader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.IO.SchemaXmlWriter" Collapsed="true">
+    <Position X="99.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAABABSAAAIARAUoEAACERAEAgMAogIIAAAAEAAIA=</HashCode>
+      <FileName>Services\IO\SchemaXmlWriter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.IO.SliceXmlReader" Collapsed="true">
+    <Position X="15" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEBAAAACAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\IO\SliceXmlReader.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.IO.SliceXmlWriter" Collapsed="true">
+    <Position X="101.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIEAAAAAAAAAAAAAAAAgAAAAAAAEAAIA=</HashCode>
+      <FileName>Services\IO\SliceXmlWriter.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.IO.XmlService" Collapsed="true">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABgAEAEAAIAEAgAAAASgAAiAAQAAEAAAEABA=</HashCode>
+      <FileName>Services\IO\XmlService.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlCopy" Collapsed="true">
+    <Position X="86.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlCopy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlCreate" Collapsed="true">
+    <Position X="18.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAQARBACAAIAEAAAAAASAAAAAAAAgAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlCreate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlDelete" Collapsed="true">
+    <Position X="25.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlDelete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlDrop" Collapsed="true">
+    <Position X="32.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAAAAAAAAQBQAAAAAQAAAAQAAAAAAAAgCAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlDrop.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlExists" Collapsed="true">
+    <Position X="39" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlExists.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlInfo" Collapsed="true">
+    <Position X="45.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlInsert" Collapsed="true">
+    <Position X="52.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAAAAAAQAQAAABAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlInsert.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlInsertFiltered" Collapsed="true">
+    <Position X="59.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAAAAAAQAQAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlInsertFiltered.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlJoin" Collapsed="true">
+    <Position X="66" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAACAAAACAAIAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlJoin.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlSelect" Collapsed="true">
+    <Position X="72.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAgAAAAAAAAQAAAAAAAAAAAAAQAAAAAAAABAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlSelect.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlTruncate" Collapsed="true">
+    <Position X="79.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlTruncate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Common.SqlUpdate" Collapsed="true">
+    <Position X="93" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAhAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Common\SqlUpdate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsCopy" Collapsed="true">
+    <Position X="84" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsCopy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsCreate" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAACAAIAEAAAAAASAAAAAAAAgAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsCreate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsDelete" Collapsed="true">
+    <Position X="23.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsDelete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsDrop" Collapsed="true">
+    <Position X="30" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsDrop.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsExists" Collapsed="true">
+    <Position X="36.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsExists.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsExport" Collapsed="true">
+    <Position X="97.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAAAAQAAAACAAAAAAABAAAAAAAEAAQACAg=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsExport.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsInfo" Collapsed="true">
+    <Position X="43.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsInsert" Collapsed="true">
+    <Position X="50.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsInsert.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsInsertFiltered" Collapsed="true">
+    <Position X="59.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsInsertFiltered.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsJoin" Collapsed="true">
+    <Position X="68.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsJoin.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsSelect" Collapsed="true">
+    <Position X="75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsSelect.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsTruncate" Collapsed="true">
+    <Position X="77.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsTruncate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Microsoft.MsUpdate" Collapsed="true">
+    <Position X="90.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Microsoft\MsUpdate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleCopy" Collapsed="true">
+    <Position X="86.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleCopy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleCreate" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleCreate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleDelete" Collapsed="true">
+    <Position X="25.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleDelete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleDrop" Collapsed="true">
+    <Position X="32.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleDrop.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleExists" Collapsed="true">
+    <Position X="39" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleExists.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleExport" Collapsed="true">
+    <Position X="99.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAEAAQAAAAAAAAAAAABAAAAAAIEABQACAg=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleExport.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleInfo" Collapsed="true">
+    <Position X="45.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleInsert" Collapsed="true">
+    <Position X="52.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleInsert.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleInsertFiltered" Collapsed="true">
+    <Position X="61.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleInsertFiltered.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleSelect" Collapsed="true">
+    <Position X="70.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleSelect.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleTruncate" Collapsed="true">
+    <Position X="79.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleTruncate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Oracle.OracleUpdate" Collapsed="true">
+    <Position X="93" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Oracle\OracleUpdate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgCopy" Collapsed="true">
+    <Position X="88.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgCopy.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgCreate" Collapsed="true">
+    <Position X="21" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAACAAIAAAAAAAACAAAAAAAAgAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgCreate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgDelete" Collapsed="true">
+    <Position X="27.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgDelete.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgDrop" Collapsed="true">
+    <Position X="34.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgDrop.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgExists" Collapsed="true">
+    <Position X="41.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgExists.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgExport" Collapsed="true">
+    <Position X="101.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAAAAQAAAACAAAAAAABAAAAAAAEAAQACAg=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgExport.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgInfo" Collapsed="true">
+    <Position X="48" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgInfo.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgInsert" Collapsed="true">
+    <Position X="54.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgInsert.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgInsertFiltered" Collapsed="true">
+    <Position X="57" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgInsertFiltered.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgJoin" Collapsed="true">
+    <Position X="63.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgJoin.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgSelect" Collapsed="true">
+    <Position X="72.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgSelect.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgTruncate" Collapsed="true">
+    <Position X="81.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgTruncate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.Postgre.PgUpdate" Collapsed="true">
+    <Position X="95.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\Postgre\PgUpdate.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.QueryContext" Collapsed="true">
+    <Position X="97.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\QueryContext.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBWrangler.Services.SqlProviders.SqlProvider" Collapsed="true">
+    <Position X="56" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAABAAAwAAAAAQCAEgACAQRkAABAgAAAAAAAAA=</HashCode>
+      <FileName>Services\SqlProviders\SqlProvider.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DBWrangler.Connectors.IConnector" Collapsed="true">
+    <Position X="97.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQASiAAABAFEDQAAAgEBABGCCC0BBAGAAFAAAAQA=</HashCode>
+      <FileName>Connectors\IConnector.vb</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DBWrangler.Enums.DatabaseVendor" Collapsed="true">
+    <Position X="97.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAgAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\DatabaseVendor.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DBWrangler.CustomToString(Of T)" Collapsed="true">
+    <Position X="97.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converting.vb</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Module Name="DBWrangler.ExtensionMethods" Collapsed="true">
+    <Position X="97.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtensionMethods.vb</FileName>
+    </TypeIdentifier>
+  </Module>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

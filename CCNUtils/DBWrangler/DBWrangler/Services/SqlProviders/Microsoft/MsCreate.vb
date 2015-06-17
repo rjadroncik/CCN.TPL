@@ -1,6 +1,4 @@
-﻿
-Imports CCN.Core.VB
-Imports DBWrangler.Connectors
+﻿Imports DBWrangler.Connectors
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Services.SqlProviders.Common
 

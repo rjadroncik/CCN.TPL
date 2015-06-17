@@ -2,7 +2,6 @@
 Imports System.IO
 Imports System.Reflection
 Imports System.Runtime.Serialization.Formatters.Binary
-Imports CCN.Core.VB
 Imports Microsoft.VisualBasic
 
 Public Module Database

@@ -1,6 +1,5 @@
 Imports System
 Imports System.Data
-Imports CCN.Core.VB
 Imports DBWrangler.Connectors
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Base

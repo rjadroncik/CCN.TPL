@@ -1,6 +1,4 @@
-﻿Imports CCN.Core.VB
-
-Namespace Model.Schema
+﻿Namespace Model.Schema
 
     Public Class KeyPrimary
         Inherits KeyUnique
