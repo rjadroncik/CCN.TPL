@@ -9,7 +9,7 @@ Namespace Model.Schema
             MyBase.New(table)
         End Sub
 
-        Protected _columns As New List(Of Column)
+        Private ReadOnly _columns As New List(Of Column)
         Public ReadOnly Property Columns() As IList(Of Column)
             Get
                 Return _columns

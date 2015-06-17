@@ -1,6 +1,4 @@
-﻿
-Imports System.IO
-Imports CCN.Services
+﻿Imports System.IO
 Imports DBWrangler.Model.Filtering
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Slice

@@ -91,9 +91,9 @@ Namespace Model.Filtering
             Return Subset(columns.Select(Function(x) x.Name).ToList())
         End Function
 
-        Public Function ToPairList(table As Table) As IList(Of Pair(Of Column, Object))
+        Public Function ToPairList(table As Table) As IList(Of KeyValuePair(Of Column, Object))
 
-            Return (From keyValue In _values Select New Pair(Of Column, Object)(table.ColumnNamed(keyValue.Key), keyValue.Value)).ToList()
+            Return (From keyValue In _values Select New KeyValuePair(Of Column, Object)(table.ColumnNamed(keyValue.Key), keyValue.Value)).ToList()
         End Function
 
 #End Region

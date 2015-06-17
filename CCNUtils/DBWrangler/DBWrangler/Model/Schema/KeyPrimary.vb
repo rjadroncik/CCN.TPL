@@ -11,9 +11,9 @@ Namespace Model.Schema
 
         Public ReadOnly Property HasIdentity() As Boolean
             Get
-                If (_columns.IsEmpty()) Then Return False
+                If (Not Columns.Any()) Then Return False
 
-                For Each column As Column In _columns
+                For Each column As Column In Columns
 
                     If (column.Identity) Then Return True
                 Next

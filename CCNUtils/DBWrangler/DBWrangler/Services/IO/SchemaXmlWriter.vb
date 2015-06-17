@@ -11,7 +11,7 @@ Namespace Services.IO
 
         Private Shared _writer As XmlWriter
 
-        Protected Shared Sub WriteStartElement(name As String)
+        Private Shared Sub WriteStartElement(name As String)
 
             _writer.WriteStartElement("cdw", name, "http://ccn.sk/utils/db_wrangler/v1.0")
         End Sub
@@ -52,7 +52,7 @@ Namespace Services.IO
                 WriteColumn(column)
             Next
 
-            If ((table.PrimaryKey IsNot Nothing) AndAlso (Not table.PrimaryKey.Columns.IsEmpty())) Then WriteKeyPrimary(table.PrimaryKey)
+            If ((table.PrimaryKey IsNot Nothing) AndAlso table.PrimaryKey.Columns.Any()) Then WriteKeyPrimary(table.PrimaryKey)
 
             For Each uniqueKey As KeyUnique In table.UniqueKeys
                 WriteKeyUnique(uniqueKey)

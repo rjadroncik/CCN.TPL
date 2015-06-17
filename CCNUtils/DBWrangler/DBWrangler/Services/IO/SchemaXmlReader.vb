@@ -1,7 +1,5 @@
-﻿
-Imports System.IO
+﻿Imports System.IO
 Imports System.Xml.Schema
-Imports CCN.Services
 Imports DBWrangler.Model.Filtering
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Model.Schema.Base
@@ -12,9 +10,9 @@ Namespace Services.IO
     Public MustInherit Class SchemaXmlReader
         Inherits XmlService
 
-        Protected Shared _suffix As String
-        Protected Shared _schema As Schema
-        Protected Shared _allKeys As Dictionary(Of String, KeyUnique)
+        Private Shared _suffix As String
+        Private Shared _schema As Schema
+        Private Shared _allKeys As Dictionary(Of String, KeyUnique)
 
         Public Shared Function Read(xmlFile As String) As Schema
 
@@ -119,7 +117,7 @@ Namespace Services.IO
             For Each item As XElement In xColumnList.Elements
 
                 Dim name As String = ReadText(item)
-                columnList.Columns.Add(table.Columns.Where(Function(x) x.Name = name).Single())
+                columnList.Columns.Add(table.Columns.Single(Function(x) x.Name = name))
             Next
         End Sub
 
@@ -130,8 +128,8 @@ Namespace Services.IO
                 Dim nameFK As String = ReadText(item.Attribute("key"))
                 Dim nameRK As String = ReadText(item.Attribute("value"))
 
-                key.Columns.Add(table.Columns.Where(Function(x) x.Name = nameFK).Single(), _
-                                key.ReferencedKey.Table.Columns.Where(Function(x) x.Name = nameRK).Single())
+                key.Columns.Add(table.Columns.Single(Function(x) x.Name = nameFK), _
+                                key.ReferencedKey.Table.Columns.Single(Function(x) x.Name = nameRK))
             Next
         End Sub
 
@@ -196,13 +194,13 @@ Namespace Services.IO
 
         Private Shared Function ReadDataType(xDataType As XElement) As DataType
 
-            Select Case ReadText(xDataType.Attributes.Where(Function(x) x.Name.LocalName = "type").Single())
+            Select Case ReadText(xDataType.Attributes.Single(Function(x) x.Name.LocalName = "type"))
                 Case "cdw:dt_string"
                     Return New DtString(ReadInteger(xDataType.Attribute("size")), _
                                         ReadBooleanOptional(xDataType.Attribute("size_fixed")).GetValueOrDefault(),
                                         ReadBooleanOptional(xDataType.Attribute("unicode")).GetValueOrDefault(True))
                 Case "cdw:dt_char"
-                    Return New DTChar(ReadBooleanOptional(xDataType.Attribute("unicode")).GetValueOrDefault(True))
+                    Return New DtChar(ReadBooleanOptional(xDataType.Attribute("unicode")).GetValueOrDefault(True))
                 Case "cdw:dt_int16"
                     Return New DtInt16()
                 Case "cdw:dt_int32"

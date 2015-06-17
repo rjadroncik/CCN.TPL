@@ -9,10 +9,10 @@ Namespace Services.SqlProviders.Oracle
 
     Public Class OracleExport
 
-        Protected Shared _command As IDbCommand
-        Protected Shared _userName As String
+        Private Shared _command As IDbCommand
+        Private Shared _userName As String
 
-        Protected Shared _allKeys As IDictionary(Of String, KeyUnique)
+        Private Shared _allKeys As IDictionary(Of String, KeyUnique)
 
         Public Shared Function Execute(tables As IEnumerable(Of String), _
                                        userName As String, progress As ProgressReporter, connector As IConnector) As Schema

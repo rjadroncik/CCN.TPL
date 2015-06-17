@@ -1,6 +1,5 @@
 ﻿Imports System.Text
 Imports System.Data.SqlClient
-Imports CCN.Services
 Imports System.IO
 Imports DBWrangler.Connectors
 Imports DBWrangler.Model.Schema

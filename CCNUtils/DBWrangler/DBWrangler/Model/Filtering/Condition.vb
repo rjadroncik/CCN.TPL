@@ -9,7 +9,7 @@ Namespace Model.Filtering
 
         Public Property Expression As String
 
-        Protected _variables As New List(Of Variable)
+        Private ReadOnly _variables As New List(Of Variable)
         Public ReadOnly Property Variables As IList(Of Variable)
             Get
                 Return _variables
@@ -100,7 +100,7 @@ Namespace Model.Filtering
 
 #Region "Where"
 
-        Protected Function WhereClause(columns As ICollection(Of Column), values As DbValues, connector As IConnector) As String
+        Private Shared Function WhereClause(columns As ICollection(Of Column), values As DbValues, connector As IConnector) As String
 
             Dim sql As String = "WHERE "
 
@@ -116,7 +116,7 @@ Namespace Model.Filtering
             Return sql
         End Function
 
-        Protected Function WhereClause(columns As ICollection(Of Column), values As ICollection(Of Object), connector As IConnector) As String
+        Private Shared Function WhereClause(columns As ICollection(Of Column), values As ICollection(Of Object), connector As IConnector) As String
 
             Dim sql As String = "WHERE "
 
@@ -135,7 +135,7 @@ Namespace Model.Filtering
             Return sql
         End Function
 
-        Protected Function WhereClause(column As Column, value As Object, connector As IConnector) As String
+        Private Shared Function WhereClause(column As Column, value As Object, connector As IConnector) As String
 
             Return "WHERE " & column.Name & " = " & column.DataType.ValueToSql(value, connector)
         End Function

@@ -10,8 +10,8 @@ Namespace Services.SqlProviders.Postgre
 
     Public Class PgExport
 
-        Protected Shared _connector As IConnector
-        Protected Shared _allKeys As Dictionary(Of String, KeyUnique)
+        Private Shared _connector As IConnector
+        Private Shared _allKeys As Dictionary(Of String, KeyUnique)
 
         Public Shared Function Execute(tables As IEnumerable(Of String), _
                                        progress As ProgressReporter, connector As IConnector) As Schema
@@ -53,7 +53,7 @@ Namespace Services.SqlProviders.Postgre
             Return schema
         End Function
 
-        Protected Shared Sub ReadColumns(table As Table)
+        Private Shared Sub ReadColumns(table As Table)
 
             Dim sql = "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, NUMERIC_PRECISION, NUMERIC_SCALE, CHARACTER_MAXIMUM_LENGTH" & _
                       " FROM INFORMATION_SCHEMA.COLUMNS" & _
@@ -93,7 +93,7 @@ Namespace Services.SqlProviders.Postgre
             End Using
         End Sub
 
-        Protected Shared Function MatchDatatype(type As String, precision As Integer?, scale As Integer?, length As Integer?) As DataType
+        Private Shared Function MatchDatatype(type As String, precision As Integer?, scale As Integer?, length As Integer?) As DataType
 
             Select Case type
 
@@ -150,7 +150,7 @@ Namespace Services.SqlProviders.Postgre
             Throw New InvalidCastException("Cant map DB datatype: " & type)
         End Function
 
-        Protected Shared Sub ReadPrimaryKey(table As Table)
+        Private Shared Sub ReadPrimaryKey(table As Table)
 
             Dim sql = "SELECT i.name, i.type_desc" & _
                       " FROM sys.indexes i" & _
@@ -191,7 +191,7 @@ Namespace Services.SqlProviders.Postgre
             End Using
         End Sub
 
-        Protected Shared Sub ReadUniqueKeys(table As Table)
+        Private Shared Sub ReadUniqueKeys(table As Table)
 
             Dim sql = "SELECT i.name, i.type_desc" & _
                       " FROM sys.indexes i" & _
@@ -233,7 +233,7 @@ Namespace Services.SqlProviders.Postgre
             End Using
         End Sub
 
-        Protected Shared Sub ReadIndexes(table As Table)
+        Private Shared Sub ReadIndexes(table As Table)
 
             Dim sql = "SELECT i.name, is_unique, i.type_desc" & _
                       " FROM sys.indexes i JOIN sys.tables ON i.object_id = sys.tables.object_id" & _
@@ -270,7 +270,7 @@ Namespace Services.SqlProviders.Postgre
             End Using
         End Sub
 
-        Protected Shared Sub ReadForeignKeys(table As Table)
+        Private Shared Sub ReadForeignKeys(table As Table)
 
             Dim sql = "SELECT c.CONSTRAINT_NAME, c.UNIQUE_CONSTRAINT_NAME" & _
                       " FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS c " & _

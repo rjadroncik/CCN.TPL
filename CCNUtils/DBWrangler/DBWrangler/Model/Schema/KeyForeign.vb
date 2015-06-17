@@ -18,7 +18,7 @@ Namespace Model.Schema
 
         Public Property ReferencedKey As KeyUnique
 
-        Protected _columns As New Dictionary(Of Column, Column)
+        Private ReadOnly _columns As New Dictionary(Of Column, Column)
         Public ReadOnly Property Columns() As IDictionary(Of Column, Column)
             Get
                 Return _columns

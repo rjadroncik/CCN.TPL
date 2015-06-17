@@ -10,18 +10,18 @@ Namespace Model.Schema
             _schema = schema
         End Sub
 
-        Protected _schema As Schema
+        Public Sub New(name As String)
+            Me.Name = name
+        End Sub
+
+        Private ReadOnly _schema As Schema
         Public ReadOnly Property Schema() As Schema
             Get
                 Return _schema
             End Get
         End Property
 
-        Public Sub New(name As String)
-            Me.Name = name
-        End Sub
-
-        Protected _columns As New List(Of Column)
+        Private ReadOnly _columns As New List(Of Column)
         Public ReadOnly Property Columns As List(Of Column)
             Get
                 Return _columns
@@ -30,21 +30,21 @@ Namespace Model.Schema
 
         Public Property PrimaryKey As KeyPrimary
 
-        Protected _indexes As New List(Of Index)
+        Private ReadOnly _indexes As New List(Of Index)
         Public ReadOnly Property Indexes As List(Of Index)
             Get
                 Return _indexes
             End Get
         End Property
 
-        Protected _uniqueKeys As New List(Of KeyUnique)
+        Private ReadOnly _uniqueKeys As New List(Of KeyUnique)
         Public ReadOnly Property UniqueKeys As List(Of KeyUnique)
             Get
                 Return _uniqueKeys
             End Get
         End Property
 
-        Protected _foreignKeys As New List(Of KeyForeign)
+        Private ReadOnly _foreignKeys As New List(Of KeyForeign)
         Public ReadOnly Property ForeignKeys As List(Of KeyForeign)
             Get
                 Return _foreignKeys

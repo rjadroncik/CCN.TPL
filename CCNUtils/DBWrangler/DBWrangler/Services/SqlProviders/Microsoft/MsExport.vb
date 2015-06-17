@@ -10,8 +10,8 @@ Namespace Services.SqlProviders.Microsoft
 
     Public Class MsExport
 
-        Protected Shared _connector As IConnector
-        Protected Shared _allKeys As Dictionary(Of String, KeyUnique)
+        Private Shared _connector As IConnector
+        Private Shared _allKeys As Dictionary(Of String, KeyUnique)
 
         Public Shared Function Execute(tables As IEnumerable(Of String), _
                                        progress As ProgressReporter, connector As IConnector) As Schema
@@ -121,9 +121,9 @@ Namespace Services.SqlProviders.Microsoft
                     Return New DtDecimal(precision.Value, If(Not scale.HasValue, 0, scale.Value), True)
 
                 Case "nchar"
-                    Return If(length = 1, DirectCast(New DTChar(), DataType), New DtString(length.Value, True))
+                    Return If(length = 1, DirectCast(New DtChar(), DataType), New DtString(length.Value, True))
                 Case "char"
-                    Return If(length = 1, DirectCast(New DTChar(False), DataType), New DtString(length.Value, True, False))
+                    Return If(length = 1, DirectCast(New DtChar(False), DataType), New DtString(length.Value, True, False))
 
                 Case "nvarchar", "ntext"
                     Return New DtString(length.Value, False)
