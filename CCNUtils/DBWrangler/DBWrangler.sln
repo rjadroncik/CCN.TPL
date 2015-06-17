@@ -15,6 +15,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPA", "TPA", "{03A8E70E-DACB-4DFD-B547-22F1440A0E64}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Npgsql", "Npgsql", "{DAE25B18-E35E-48AB-AFCA-4F8D6F7F8500}"
+	ProjectSection(SolutionItems) = preProject
+		DBWrangler.TPA\Npgsql\Mono.Security.dll = DBWrangler.TPA\Npgsql\Mono.Security.dll
+		DBWrangler.TPA\Npgsql\Npgsql.dll = DBWrangler.TPA\Npgsql\Npgsql.dll
+		DBWrangler.TPA\Npgsql\Npgsql.pdb = DBWrangler.TPA\Npgsql\Npgsql.pdb
+		DBWrangler.TPA\Npgsql\Npgsql.xml = DBWrangler.TPA\Npgsql\Npgsql.xml
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oracle", "Oracle", "{A7D31414-059F-452D-A23C-D945AAA3E169}"
 	ProjectSection(SolutionItems) = preProject
