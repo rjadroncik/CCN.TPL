@@ -3,6 +3,7 @@ Imports CCN.Core.VB
 Imports DBWrangler.Model.Schema.Datatypes
 Imports DBWrangler.Model.Schema
 Imports DBWrangler.Services.IO
+Imports System.IO
 
 <TestClass()>
 Public Class TestXML
@@ -44,6 +45,24 @@ Public Class TestXML
     '
 #End Region
 
+    Public Shared Function EqualContent(ByVal file1 As String, ByVal file2 As String) As Boolean
+
+        If (file1 = file2) Then Return True
+
+        Using fs1 As New FileStream(file1, FileMode.Open), _
+              fs2 As New FileStream(file2, FileMode.Open)
+
+            If (fs1.Length <> fs2.Length) Then Return False
+
+            For i = 1 To fs1.Length
+
+                If (fs1.ReadByte() <> fs2.ReadByte()) Then Return False
+            Next
+
+            Return True
+        End Using
+    End Function
+
     <TestMethod()>
     Public Sub TestSchemaIO()
 
@@ -58,7 +77,7 @@ Public Class TestXML
 
         SchemaXmlWriter.Write(schemaReconstructed, fileReconstructed)
 
-        Assert.IsTrue(Comparing.EqualContent(fileOriginal, fileReconstructed))
+        Assert.IsTrue(EqualContent(fileOriginal, fileReconstructed))
     End Sub
 
     Private Shared Function CreateSampleSchema() As Schema

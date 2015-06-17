@@ -37,7 +37,7 @@ Namespace Services.SqlProviders.Common
                 first = False
             Next
 
-            If (primaryKeys AndAlso (table.PrimaryKey IsNot Nothing) AndAlso (Not table.PrimaryKey.Columns.IsEmpty())) Then sql &= ", " & PrimaryKey(table)
+            If (primaryKeys AndAlso (table.PrimaryKey IsNot Nothing) AndAlso table.PrimaryKey.Columns.Any()) Then sql &= ", " & PrimaryKey(table)
 
             If (uniqueKeys) Then
 

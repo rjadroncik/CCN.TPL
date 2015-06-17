@@ -142,7 +142,7 @@ Namespace Model.Filtering
 
         Public Overrides Function ToString() As String
 
-            Return _values.ToStringAll()
+            Return String.Join(", ", _values)
         End Function
 
 #End Region

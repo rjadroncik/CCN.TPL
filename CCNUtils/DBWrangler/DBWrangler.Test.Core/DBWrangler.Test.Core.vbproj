@@ -85,6 +85,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.vb" />
     <Compile Include="TestSlice.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="TestMsExport.vb" />
@@ -94,14 +95,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CCNCore\CCN.Core.VB\CCN.Core.VB.vbproj">
-      <Project>{34580198-126A-4387-B116-92041D8BF7A6}</Project>
-      <Name>CCN.Core.VB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\CCNCore\CCN.Services\CCN.Services.vbproj">
-      <Project>{F9DC428E-4AEC-4968-8E4E-39A71FFBE6F5}</Project>
-      <Name>CCN.Services</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DBWrangler\DBWrangler.vbproj">
       <Project>{14E019F3-3C05-4EE3-AD97-C802E5B980C1}</Project>
       <Name>DBWrangler</Name>
