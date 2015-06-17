@@ -6,7 +6,7 @@ Imports CCN.Services
 Public Class XmlService
     Inherits Service
 
-#Region "Nacitavanie atomickych hodnot - elemnty"
+#Region "Nacitavanie atomickych hodnot - elementy"
 
     Protected Shared Function ReadText(element As XElement, Optional maxLength As Integer = 255) As String
 
